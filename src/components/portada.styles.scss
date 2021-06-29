@@ -1,10 +1,29 @@
 .portada{
     color: white;
-    h1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 98vh;
+    margin-right: 9%;
+    margin-left: 4%;
 
+    h1{
+        grid-row: 1;
+        grid-column: 1;
+        font-size: 21em;
+        font-family: 'Barrio', cursive;
+        justify-self: center;
+        align-self: center;
     }
 
     p{
-
+        grid-row: 1;
+        grid-column: 1;
+        font-size: 3em;
+        font-family: 'Barrio', cursive;
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
     }
 }

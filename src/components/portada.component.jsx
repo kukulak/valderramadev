@@ -11,13 +11,14 @@ const Portada = ({text}) =>(
     <div className='portada'> 
         <h1>
             fullStack
+            developer 
         </h1>
             <p>
                 Python & javascript
             </p>
-        <h1>
+        {/* <h1>
             developer    
-        </h1>    
+        </h1>     */}
     </div>
            
    

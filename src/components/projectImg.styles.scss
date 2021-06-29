@@ -1,0 +1,17 @@
+.projectImg{
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    border: solid 1px grey;
+    
+    img{
+        max-width: 50vw;
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+image-rendering:   -o-crisp-edges;         /* Opera */
+image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+image-rendering: crisp-edges;
+-ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+
+    }
+}
+

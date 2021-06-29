@@ -1,18 +1,20 @@
 import React from 'react';
-import './projectName.styles.scss'
+import './projectStack.styles.scss'
+
+
 
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
-const ProjectName = ({name}) =>(
+const ProjectStack = ({stack}) =>(
 
-    <div className='projectName'> 
-        {/* <p>{name}</p> */}
+    <div className='projectStack'> 
+        <p>{stack}</p>
     </div>
            
    
 );
 
-export default ProjectName;
+export default ProjectStack;

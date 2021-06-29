@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import HomePage from '../src/components/home/home.component'
+// import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         </a>
       </header> */}
 
-      <HomePage/>
+      {/* <ParallaxProvider> */}
+        <HomePage/>
+      {/* </ParallaxProvider> */}
 
     </div>
   );

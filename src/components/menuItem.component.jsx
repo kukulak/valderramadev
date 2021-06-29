@@ -7,8 +7,8 @@ import './menuItem.styles.scss'
 
 const Menuitem = ({nombre, link}) =>(
 
-    <div className='menuBtn'> 
-        <p> {nombre} </p>
+    <div className='menuItem'> 
+        <a href={link}>{nombre}</a>
     </div>
        
 

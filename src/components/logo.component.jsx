@@ -1,5 +1,5 @@
 import React from 'react';
-import './project.styles.scss'
+import './logo.styles.scss'
 
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
@@ -8,8 +8,9 @@ import './project.styles.scss'
 
 const Logo = ({url}) =>(
 
-    <div className='projectImg'> 
-        <img src={url} alt="logo" />
+    <div className='logo'> 
+        {/* <img src={url} alt="logo" /> */}
+        <h1>valderrama</h1>
     </div>
            
    

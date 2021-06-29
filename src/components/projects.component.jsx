@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import './project.styles.scss'
+import './projects.styles.scss'
 import Project from './project.component'
 import { render } from '@testing-library/react';
+
+import Infotext from './infoText.component';
+import Contact from './contact.component';
 
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
@@ -18,7 +21,7 @@ class Projects extends React.Component {
                 "id": 1,
                 "name": "Morris",
                 "btnText": "Morris",
-                "foto": "",
+                "foto": "/img/morris.png",
                 "stack": "SASS / ReactJs",
                 "informacion": "Página para el artista Morris",
                 "link": "/"
@@ -27,7 +30,7 @@ class Projects extends React.Component {
                 "id": 2,
                 "name": "dannyychris.com",
                 "btnText": "dannyychris.com",
-                "foto": "",
+                "foto": "/img/dannyychris.png",
                 "stack": "Django",
                 "informacion":"3 diferentes templates para aumentar información",
                 "link": "/acerca-de-mi"
@@ -36,7 +39,7 @@ class Projects extends React.Component {
                 "id": 3,
                 "name": "3BH",
                 "btnText": "ver video",
-                "foto": "",
+                "foto": "/img/3bh.png",
                 "stack": "SASS / ReactJs / WordPress Rest Api",
                 "informacion":"Página en construccion",
                 "link": "/colecciones"
@@ -45,7 +48,7 @@ class Projects extends React.Component {
                 "id": 4,
                 "name": "ahorraAhora.com",
                 "btnText": "ahorraAhora.com",
-                "foto": "",
+                "foto": "/img/ahorraahora.png",
                 "stack": "Django",
                 "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
                 "link": "/contacto"
@@ -54,7 +57,7 @@ class Projects extends React.Component {
                 "id": 5,
                 "name": "frutasentemporada.com",
                 "btnText": "frutasentemporada.com",
-                "foto": "",
+                "foto": "/img/frutas.png",
                 "stack": "JavaScript Vainilla",
                 "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
                 "link": "/contacto"
@@ -63,7 +66,7 @@ class Projects extends React.Component {
                 "id": 6,
                 "name": "palabraHablada.com",
                 "btnText": "palabraHablada.com",
-                "foto": "",
+                "foto": "/img/habla.png",
                 "stack": "Django / JavaScript",
                 "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
                 "link": "/contacto"
@@ -79,9 +82,12 @@ class Projects extends React.Component {
             {
 
                 this.state.projects.map(({name, id, link, informacion, foto, stack}) => (
-                    <Project urlImg={foto} name={name} textInfo={informacion} stack={stack} projectUrl={link} textBtn={name}/>
+                    <Project urlImg={process.env.PUBLIC_URL + foto} name={name} textInfo={informacion} stack={stack} projectUrl={link} textBtn={name}/>
              ))
             }  
+
+            <Infotext  />
+            <Contact />
             </div>
         )
     }

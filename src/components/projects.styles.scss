@@ -1,0 +1,18 @@
+.projects{
+    display: grid;
+    justify-items: center;
+
+
+    grid-auto-rows: auto;
+    display: flex;
+    /* justify-items: center; */
+    width: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+
+    column-gap: 20vw;
+
+
+}

@@ -1,0 +1,20 @@
+.projectContenedor{
+    justify-items: stretch;
+    display: flex;
+    /* justify-items: stretch; */
+    flex-direction: row;
+    width: min-content;
+    flex-wrap: wrap;
+    // height: 100vh;
+    justify-content: space-between;
+    align-content: baseline;
+    // align-self: baseline;
+    p{
+        font-size: 36px;
+        padding: 0 12px;
+    }
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}
