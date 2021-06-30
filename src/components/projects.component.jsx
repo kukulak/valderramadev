@@ -24,7 +24,8 @@ class Projects extends React.Component {
                 "foto": "/img/morris.png",
                 "stack": "SASS / ReactJs",
                 "informacion": "Página para el artista Morris",
-                "link": "/"
+                "link": "/",
+                "mTop": "23"
             },   
             {
                 "id": 2,
@@ -33,7 +34,8 @@ class Projects extends React.Component {
                 "foto": "/img/dannyychris.png",
                 "stack": "Django",
                 "informacion":"3 diferentes templates para aumentar información",
-                "link": "/acerca-de-mi"
+                "link": "/acerca-de-mi",
+                "mTop": "43"
             },
             {
                 "id": 3,
@@ -42,7 +44,8 @@ class Projects extends React.Component {
                 "foto": "/img/3bh.png",
                 "stack": "SASS / ReactJs / WordPress Rest Api",
                 "informacion":"Página en construccion",
-                "link": "/colecciones"
+                "link": "/colecciones",
+                "mTop": "23"
             },
             {
                 "id": 4,
@@ -51,7 +54,8 @@ class Projects extends React.Component {
                 "foto": "/img/ahorraahora.png",
                 "stack": "Django",
                 "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
-                "link": "/contacto"
+                "link": "/contacto",
+                "mTop": "63"
             },
             {
                 "id": 5,
@@ -60,7 +64,8 @@ class Projects extends React.Component {
                 "foto": "/img/frutas.png",
                 "stack": "JavaScript Vainilla",
                 "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
-                "link": "/contacto"
+                "link": "/contacto",
+                "mTop": "13"
             },
             {
                 "id": 6,
@@ -69,7 +74,8 @@ class Projects extends React.Component {
                 "foto": "/img/habla.png",
                 "stack": "Django / JavaScript",
                 "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
-                "link": "/contacto"
+                "link": "/contacto",
+                "mTop": "73"
             }
             ]
         }
@@ -78,11 +84,11 @@ class Projects extends React.Component {
     render(){
 
         return(
-            <div className='projects'> 
+            <div id="proyectos" className='projects'> 
             {
 
-                this.state.projects.map(({name, id, link, informacion, foto, stack}) => (
-                    <Project urlImg={process.env.PUBLIC_URL + foto} name={name} textInfo={informacion} stack={stack} projectUrl={link} textBtn={name}/>
+                this.state.projects.map(({name, id, link, informacion, foto, stack, mTop}) => (
+                    <Project urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} textBtn={name}/>
              ))
             }  
 

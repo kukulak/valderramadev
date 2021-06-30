@@ -6,9 +6,9 @@ import './menu.styles.scss'
 function HomePage(){
     return(
         <div className="menu">
-            <MenuItem nombre='Proyectos'/>
-            <MenuItem nombre='Info'/>
-            <MenuItem nombre='Contacto'/>
+            <MenuItem link='#proyectos' nombre='Proyectos'/>
+            <MenuItem link='#info' nombre='Info'/>
+            <MenuItem link='#contacto' nombre='Contacto'/>
         </div>
     );
 

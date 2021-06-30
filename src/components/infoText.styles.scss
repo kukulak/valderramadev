@@ -6,8 +6,13 @@
     justify-items: center;
     p{
         width: 50vw;
-        font-size: large;
+        font-size: larger;
+        font-size: 20px;
+        font-size: 1.3em;
         text-align: left;
         line-height: 2;
+        strong{
+            font-size: 21px;
+        }
     }
 }

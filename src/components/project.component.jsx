@@ -10,9 +10,9 @@ import ProjectStack from './projectStack.component'
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
-const Project = ({urlImg, name, stack, textBtn, projectUrl, textInfo}) =>(
+const Project = ({urlImg, name, stack, textBtn, projectUrl, textInfo, mTop}) =>(
 
-    <div className='projectContenedor'> 
+    <div className='projectContenedor' style={{ marginTop : mTop }}> 
        <ProjectImg urlImg={urlImg} name={name}/>
        <ProjectInfo textInfo={textInfo}/>
        <ProjectName name={name}/>

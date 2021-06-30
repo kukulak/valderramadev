@@ -1,6 +1,6 @@
 .home{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
@@ -10,15 +10,18 @@
 
 .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     align-items: center;
     justify-content: space-between;
+    gap: 100px;
     // top: -130px !important;
+
+    // margin-left: 10vw !important;
     
 }
 
 .panel{
-    margin-top: 95px;
+    // margin-top: 95px;
 }

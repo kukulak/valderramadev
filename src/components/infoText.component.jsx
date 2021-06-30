@@ -8,21 +8,19 @@ import './infoText.styles.scss'
 
 const Infotext = ({infoText}) =>(
 
-    <div className='infoText'> 
+    <div id="info" className='infoText'> 
         {/* <p>{infoText}</p> */}
         <p>
-
-            Tengo más de 2 años de experiencia como Full Stack Developer,
-            utilizo Python y JavaScript. Manejo frameworks y librerías como
-            React, Django, Threejs, GSAP.
-
-            Con más de 15 años de experiencia en comunicación visual,
-            evolucioné mi carrera a Front End, poco a poco me fui involucrando
-            más en la programación hasta llegar a Full Stack Developer.
+            Tengo más de 2 años de experiencia como <strong>Full Stack Developer, </strong>
+            utilizo Python y JavaScript.
+        </p> 
+        <p> 
+            Manejo frameworks, librerías y herramientas como <strong> ReactJs, NodeJs, GraphQL, Django, Threejs, GSAP, Webpack. </strong>
         </p>
+    <p><br/></p>
+            <p>Con más de 15 años de experiencia en comunicación visual,
+            evolucioné mi carrera a <strong>Full Stack Developer</strong>, queria algo más, interactividad y magia, animaciones y data, generar experiencias del 0 al 1.</p>
     </div>
-           
-   
 );
 
 export default Infotext;

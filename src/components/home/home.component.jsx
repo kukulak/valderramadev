@@ -31,21 +31,23 @@ class HomePage extends Component{
     componentDidMount() {
         let sections = gsap.utils.toArray(".panel") 
         
-        gsap.to(sections, {
-            xPercent: -120 * (sections.length - 1),
-            ease: "none",
-            // y: "10%",
-            scrollTrigger: {
-              trigger: ".container",
-              pin: true,
-              scrub: 1,
-            //   snap: 1 / (sections.length - 1),
-              markers: true,
-              end: ()=>"+=" + document.querySelector(".container").offsetWidth
+        // gsap.to(sections, {
+        //     // x: -1150,
+        //     xPercent: -120 * (sections.length - 1),
+        //     ease: "none",
+        //     opacity: 1,
+        //     // y: "10%",
+        //     scrollTrigger: {
+        //       trigger: ".container",
+        //       pin: true,
+        //       scrub: 1,
+        //     //   snap: 1 / (sections.length - 1),
+        //       markers: true,
+        //       end: ()=>"+=" + document.querySelector(".container").offsetWidth
            
-            },
+        //     },
          
-          });
+        //   });
         
       
     
@@ -57,19 +59,22 @@ class HomePage extends Component{
             <div className="home">
                 <Menu />
                 <Logo />
-                <Portada />
+                {/* <Portada /> */}
                 <FullBackground />
-                <div className="container">
-                    <div className="panel">
-                        <Projects />
+                <Portada />
+                <Projects />
+                {/* <div className="container"> */}
+                    {/* <div className="panel">
                     </div>
                     <div className="panel">
+                    </div> */}
+                    {/* <div className="panel"> */}
                         {/* <Infotext /> */}
-                    </div>
+                    {/* </div> */}
                     {/* <div className="panel">
                         <Contact />
                     </div> */}
-                </div>
+                {/* </div> */}
              </div>
             )
     }
