@@ -6,11 +6,11 @@ import './red.styles.scss'
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
-const Red = ({link, url, name}) =>(
+const Red = ({link, img, name}) =>(
 
     <div className='red'> 
-        <a href={link}>
-            <img src={url} alt={name} />
+        <a href={link} target="_blank" rel="noreferrer">
+            <img className='iconRedes' src={img} alt={name} />
         </a>
     </div>
            

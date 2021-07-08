@@ -1,14 +1,13 @@
 .projectContenedor{
-    justify-items: stretch;
-    display: flex;
-    /* justify-items: stretch; */
+    display: grid;
     flex-direction: row;
     width: min-content;
     flex-wrap: wrap;
-    // height: 100vh;
-    justify-content: space-between;
-    align-content: baseline;
-    // align-self: baseline;
+    justify-items: start;
+    padding: 30px;
+    // overflow: hidden;
+ 
+
     p{
         font-size: 26px;
         padding: 0 12px;
@@ -17,4 +16,20 @@
         color: whitesmoke;
         text-decoration: none;
     }
+
+    &:hover{
+        cursor: crosshair;
+        // background-color: rgba(31, 31, 31, 0.178);
+        
+    }
+
+
 }
+
+// .projectContenedor :after{
+//     background-color: yellowgreen;
+//     content: ' ';
+//     height: 10px;
+//     width: 10px;
+//     position: absolute;
+// }

@@ -1,0 +1,19 @@
+.unselectable{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+    pointer-events: none;
+}
+
+.reselect{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+    pointer-events: auto;
+}

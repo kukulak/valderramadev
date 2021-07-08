@@ -1,6 +1,8 @@
 import React from 'react';
 import './infoText.styles.scss'
 
+import Redes from './redes.component'
+
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import { scroller } from 'react-scroll';
@@ -8,7 +10,7 @@ import './infoText.styles.scss'
 
 const Infotext = ({infoText}) =>(
 
-    <div id="info" className='infoText'> 
+    <div id="info" className='infoText box'> 
         {/* <p>{infoText}</p> */}
         <p>
             Tengo más de 2 años de experiencia como <strong>Full Stack Developer, </strong>
@@ -19,7 +21,10 @@ const Infotext = ({infoText}) =>(
         </p>
     <p><br/></p>
             <p>Con más de 15 años de experiencia en comunicación visual,
-            evolucioné mi carrera a <strong>Full Stack Developer</strong>, queria algo más, interactividad y magia, animaciones y data, generar experiencias del 0 al 1.</p>
+            evolucioné mi carrera a <strong>Front End Developer</strong> esto me llevó a interesarme más en el código y realizar proyectos <strong>Full Stack</strong>.</p>
+
+
+            <Redes/>
     </div>
 );
 

@@ -3,16 +3,28 @@ import './projectInfo.styles.scss'
 
 import Infotext from './infoText.component'
 
+import iconLive from '../assets/icons/web.svg'
+import iconGit from '../assets/icons/github.svg'
+
+import BasicBtn from './basicBtn.component';
+
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
-const ProjectInfo = ({textInfo}) =>(
+
+
+const ProjectInfo = ({icono, hrefLive, hrefGit, textInfo}) =>(
 
     <div className='projectInfo'> 
-        {/* <p>{textInfo}</p> */}
+        <p>{textInfo}</p>
         {/* <Infotext /> */}
+        <div className="botones">
+            <BasicBtn icono={iconLive} href={hrefLive} text='Live' />
+            <BasicBtn icono={iconGit} href={hrefGit} text='GitHub' />
+        </div>
+            
     </div>
            
    

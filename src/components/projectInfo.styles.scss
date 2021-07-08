@@ -1,0 +1,34 @@
+.projectInfo{
+    position: absolute;
+    // background: #000000d4;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    transition: 1s;
+    p{  
+        // background-color: cadetblue;
+        max-width: 50vw;
+        font-size: 22px;
+        width: 1000px;
+    }
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin: 10px auto;
+    p{
+        font-size: 20px;
+    }
+}
+
+
+.projectInfo{
+    margin: 90px auto;
+}

@@ -1,17 +1,65 @@
-.projectImg{
-    width: max-content;
-    height: max-content;
-    padding: 10px;
-    border: solid 1px grey;
-    
-    img{
-        max-width: 50vw;
-        image-rendering: -moz-crisp-edges;         /* Firefox */
-image-rendering:   -o-crisp-edges;         /* Opera */
-image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
-image-rendering: crisp-edges;
--ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+@use "sass:math";
 
+.projectImg{
+    width: 60vw;
+    // height: max-content;
+    height: 28vw;
+    padding: 0px;
+    // border: solid 1px grey;
+    overflow: hidden;
+    transition: all 1s;
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 360px 0 #000000;
+    &:hover{
+        padding: 0;
+        // height: 26vw;
+    }
+    .imgProject{
+        transition: all 3s cubic-bezier(0.39, 0.58, 0.57, 1);
+        // max-width: 50vw;
+        width: 60vw;
+        image-rendering: -moz-crisp-edges;         /* Firefox */
+        image-rendering:   -o-crisp-edges;         /* Opera */
+        image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+        
+    }
+    .imgProject:hover{
+        margin-left: 60px;
+        width: 70vw;
+        margin-top: -10px;
+        
     }
 }
+// $transition-speed: math.div(1s, 50px);
 
+// @mixin move($left-start, $left-stop) {
+//   position: absolute;
+//   left: $left-start;
+//   transition: left ($left-stop - $left-start) * $transition-speed;
+
+//   &:hover {
+//     left: $left-stop;
+//   }
+// }
+
+// .projectImg {
+//   @include move(10px, 120px);
+// }
+
+
+.contenedorInfo{
+    width: -webkit-fill-available;
+    position: absolute;
+    height: -webkit-fill-available;
+    transition: 1s;
+    margin-left: 5000px;
+    background: #000000d4;
+    box-shadow: 0 0 360px 0 #000000;
+    // width: 1500px;
+}

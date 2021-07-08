@@ -30,6 +30,7 @@ function Portada (){
                 ease: 'none',
                 // duration: 2,
                 xPercent: -112,
+                opacity: -0.3,
                 scrollTrigger:{
                     trigger: ".portada",
                     // start: "top center",
@@ -53,6 +54,7 @@ function Portada (){
                 ease: 'none',
                 // duration: 2,
                 xPercent: 112,
+                opacity: -0.3,
                 scrollTrigger:{
                     trigger: ".portada",
                     // start: "top center",
@@ -77,6 +79,7 @@ function Portada (){
                 ease: 'none',
                 // duration: 2,
                 yPercent: -700,
+                opacity: -0.5,
                 scrollTrigger:{
                     trigger: ".portada",
                     // start: "top center",
@@ -85,7 +88,7 @@ function Portada (){
                     pin: true,
                     pinSpacing: false,
                     scrub: 1,
-                    opacity: 0,
+                    // opacity: 0,
                     markers: true
 
                     // toggleActions: "play pause resume pause",

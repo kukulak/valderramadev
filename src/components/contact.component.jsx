@@ -8,7 +8,7 @@ import BasicBtn from './basicBtn.component'
 
 const Contact = ({text}) =>(
 
-    <div id="contacto" className='contact'> 
+    <div id="contacto" className='box contact'> 
         <p>{text}</p>
         <BasicBtn text='ENVIAR' />
     </div>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './projectBtn.styles.scss'
 
+import Distortion from "./distortionsBlotter/distortion.js";
+
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 // import { scroller } from 'react-scroll';
@@ -9,8 +11,15 @@ import './projectBtn.styles.scss'
 const ProjectBtn = ({textBtn, projectUrl}) =>(
 
     <div className='projectBtn'> 
+
     <a href={projectUrl}>
-        <p>{textBtn}</p>
+
+        {/* <Distortion text={textBtn} /> */}
+        <div>
+            {textBtn}
+                {/* <Distortion text={textBtn} /> */}
+
+        </div>
     </a>
     </div>
            
