@@ -27,12 +27,28 @@
 
 
 
+// const Container = () => (
+//     <Parallax strength={300}>
+//         <Background className="custom-bg">
+//             <img src="http://www.fillmurray.com/500/320" alt="fill murray" />
+//         </Background>
+//     </Parallax>
+// );
+
+
+
+
+
+
+
+
 
 import React, { useState } from 'react';
 import './background.styles.scss'
 
 import { render } from '@testing-library/react';
 
+import { Parallax, Background } from 'react-parallax';
 
 
 
@@ -71,27 +87,27 @@ class FullBackground extends React.Component {
     componentDidMount(){
 
 
-        let container = document.querySelector("#back");
+        // let container = document.querySelector("#back");
 
-        let height;
-        function setHeight() {
-        height = container.clientHeight;
-        document.body.style.height = height + "px";
-        }
-        ScrollTrigger.addEventListener("refreshInit", setHeight);
+        // let height;
+        // function setHeight() {
+        // height = container.clientHeight;
+        // document.body.style.height = height + "px";
+        // }
+        // ScrollTrigger.addEventListener("refreshInit", setHeight);
 
-        // smooth scrolling container
-        gsap.to(container, {
-        y: () => -(height - document.documentElement.clientHeight),
-        ease: "none",
-        scrollTrigger: {
-            trigger: document.body,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1,
-            invalidateOnRefresh: true
-        }
-        });            
+        // // smooth scrolling container
+        // gsap.to(container, {
+        // y: () => -(height - height),
+        // ease: "none",
+        // scrollTrigger: {
+        //     trigger: document.body,
+        //     start: "top top",
+        //     end: "bottom bottom",
+        //     scrub: 1,
+        //     invalidateOnRefresh: true
+        // }
+        // });            
 
 
       
@@ -101,13 +117,38 @@ class FullBackground extends React.Component {
 
 
 
+ 
+
 
     render(){
 
         return(
-            <div id='back' className='fullBackground'> 
-                {/* <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" /> */}
-            </div>
+            // <div id='backs' className='fullBackground'> 
+
+            <Parallax
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} 
+            renderLayer={percentage => (
+                <div
+                    style={{
+                        position: 'absolute',
+                        background: `rgba(255, 125, 0, ${percentage * 1})`,
+                        left: '50%',
+                        top: '50%',
+                        width: percentage * 500,
+                        height: percentage * 500,
+                    }}
+                />
+            )}
+        >
+            
+                    {/* <Background className="custom-bg">
+                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" />
+                      
+                    </Background> */}
+                </Parallax>
+
+
+            // </div>
         )
     }
 

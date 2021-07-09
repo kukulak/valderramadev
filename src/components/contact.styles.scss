@@ -1,3 +1,78 @@
 .contact{
     color: white;
 }
+
+.contactContainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 200px;
+}
+
+.contactForm{
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-gap: 20px;
+    gap: 20px;
+    max-width: 59vw;
+}
+
+.contactGeneral{
+    text-align: left;
+    display: grid;
+    margin-bottom: 1px;
+    label{
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+    input{
+        height: 40px;
+        width: 400px;
+        font-size: 20px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        // font-family: 'Bigshot One', cursive;
+        font-weight: 100;
+        color: grey;
+        // background-color: #b5b5b5;
+    }
+    input:-internal-autofill-selected {
+        appearance: menulist-button;
+        background-image: none !important;
+        // background-color: #b5b5b5;
+        color: -internal-light-dark(rgb(70, 70, 70), white) !important;
+    }
+}   
+
+.contactNombre{
+
+}
+
+.contactEmail{
+
+}
+
+.contactMensaje{
+
+    textarea{
+        width: 400px;
+        // background-color: #b5b5b5;
+        padding: 10px 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.5;
+        width: 600px;
+    }
+}
+
+.contactEnviar{
+    max-width: 100px;
+    padding: 10px;
+    // background-color: #bebebe;
+    text-align: center;
+        line-height: 1.5;
+}
+
+.linkMusic{
+    align-self: center;
+}

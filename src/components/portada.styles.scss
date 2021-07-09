@@ -24,10 +24,20 @@
         
     }
 
+    .full{
+        margin-bottom: -70px;
+    }
+
+    .developer{
+        margin-top: -81px;
+    }
+
     h1{
         grid-row: 1;
         grid-column: 1;
         font-size: 25em;
+        font-size: 23vw;
+        font-size: 28vw;
         font-family: 'Barrio', cursive;
         font-family: 'Bigshot One', cursive;
         justify-self: center;

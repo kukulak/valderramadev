@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import HomePage from '../src/components/home/home.component'
+import SuperHome from './components/valderramaDev';
+import PageProjects from './components/pageProyectos/pageProyectos.component';
 // import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
@@ -22,7 +24,11 @@ function App() {
       </header> */}
 
       {/* <ParallaxProvider> */}
-        <HomePage/>
+        {/* <HomePage/> */}
+
+      <PageProjects />
+
+        {/* <SuperHome/> */}
       {/* </ParallaxProvider> */}
 
     </div>

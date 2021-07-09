@@ -1,0 +1,84 @@
+.cuadriculaProjects{
+    margin: 230px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: baseline;
+    gap: 15px;
+    width: 100%;
+    max-width: 80vw;
+        .projectStack p{
+            font-size: 22px;
+        }
+
+        .projectBtn{
+            font-size: 22px;
+        }
+        .botones{
+            margin-top: -10px;
+        }
+        
+        .projectContenedor{
+            max-height: 200px;
+            // transform: scale(0.5);
+        }
+        
+        
+        
+        
+        .projectContenedor{
+            display: grid;
+            flex-direction: row;
+            width: min-content;
+            flex-wrap: wrap;
+            justify-items: start;
+            padding: 30px;
+            // overflow: hidden;
+            transition: 0.5s;
+        
+            p{
+                font-size: 26px;
+                padding: 0 12px;
+            }
+            a{
+                align-items: center;
+                color: whitesmoke;
+                text-decoration: none;
+                align-items: center;
+            }
+        
+            &:hover{
+                a:hover{
+        
+                    color: rgb(34, 34, 34);
+                }   
+                cursor: crosshair;
+                // background-color: rgba(31, 31, 31, 0.178);
+                
+            }
+        
+            .projectImg{
+                width: 320px;
+                height: 162px;
+            }
+
+            .projectImg .imgProject:hover {
+                margin-left: 10px;
+                width: 400px;
+                margin-top: -10px;}
+            .projectImg .imgProject {
+                    
+                    width: 352px;
+                    }    
+        
+        }
+
+        .projectStack p{
+            font-size: 20px;
+        }
+}
+
+
+.panelContact{
+    padding: 0 120px;
+}

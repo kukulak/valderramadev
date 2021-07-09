@@ -12,8 +12,8 @@ const Logo = ({url}) =>(
 
     <div className='logo'> 
         {/* <img src={url} alt="logo" /> */}
-        {/* <h1>valderrama</h1> */}
-        <Distortion text='valderrama' />
+        <h1>valderrama</h1>
+        {/* <Distortion text='valderrama' /> */}
     </div>
            
    

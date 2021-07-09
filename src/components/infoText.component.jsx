@@ -10,10 +10,10 @@ import Redes from './redes.component'
 
 const Infotext = ({infoText}) =>(
 
-    <div id="info" className='infoText box'> 
+    <div id="info" className='infoText'> 
         {/* <p>{infoText}</p> */}
         <p>
-            Tengo más de 2 años de experiencia como <strong>Full Stack Developer, </strong>
+            Tengo más de 2 años de experiencia como <strong>Full Stack Developer; </strong>
             utilizo Python y JavaScript.
         </p> 
         <p> 
@@ -21,7 +21,7 @@ const Infotext = ({infoText}) =>(
         </p>
     <p><br/></p>
             <p>Con más de 15 años de experiencia en comunicación visual,
-            evolucioné mi carrera a <strong>Front End Developer</strong> esto me llevó a interesarme más en el código y realizar proyectos <strong>Full Stack</strong>.</p>
+            evolucioné mi carrera a <strong>Front End Developer,</strong> esto me llevó a interesarme más en el código y realizar proyectos <strong>Full Stack</strong>.</p>
 
 
             <Redes/>

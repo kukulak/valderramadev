@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Parallax, Background } from 'react-parallax';
 
 import Menu from '../menu.component';
-import FullBackground from './background.component'
+import FullBackground from '../home/background.component'
 import Contact from '../contact.component'
-import Projects from '../projects.component'
+import GridProjects from './gridProjects.components'
 import Portada from '../portada.component'
 import Logo from '../logo.component'
 import Infotext from '../infoText.component'
-import './home.styles.scss'
+import './pageProjects.styles.scss'
 
 // import { gsap } from "gsap";
 
@@ -22,7 +22,7 @@ import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-class HomePage extends Component{
+class PageProjects extends Component{
 
     state = {
         frases: []
@@ -70,8 +70,8 @@ class HomePage extends Component{
                     <Logo />
                     {/* <Portada /> */}
                     {/* <FullBackground /> */}
-                    <Portada />
-                    <Projects />
+                    {/* <Portada /> */}
+                    <GridProjects />
                     {/* <div className="container"> */}
                         {/* <div className="panel">
                         </div>
@@ -79,10 +79,10 @@ class HomePage extends Component{
                         </div> */}
                         {/* <div className="panel">
                             <Infotext />
-                        </div>
-                        <div className="panel">
-                            <Contact />
                         </div> */}
+                        <div className="panelContact">
+                            <Contact />
+                        </div>
                     {/* </div> */}
                 </div>
              </Parallax>
@@ -91,4 +91,4 @@ class HomePage extends Component{
 
 }
 
-export default HomePage;
+export default PageProjects;

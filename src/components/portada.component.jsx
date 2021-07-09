@@ -39,7 +39,7 @@ function Portada (){
                     pin: true,
                     // pinSpacing: false,
                     scrub: 1,
-                    markers: true
+                    markers: false
                     // toggleActions: "play pause resume pause",
                 },
             }
@@ -63,7 +63,7 @@ function Portada (){
                     pin: true,
                     // pinSpacing: false,
                     scrub: 1,
-                    markers: true
+                    markers: false
                     // toggleActions: "play pause resume pause",
                 },
             }
@@ -89,7 +89,8 @@ function Portada (){
                     pinSpacing: false,
                     scrub: 1,
                     // opacity: 0,
-                    markers: true
+                    markers: false,
+                    id: "portada"
 
                     // toggleActions: "play pause resume pause",
                 },

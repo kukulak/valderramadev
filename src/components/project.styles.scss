@@ -6,18 +6,24 @@
     justify-items: start;
     padding: 30px;
     // overflow: hidden;
- 
+    transition: 0.5s;
 
     p{
         font-size: 26px;
         padding: 0 12px;
     }
     a{
+        align-items: center;
         color: whitesmoke;
         text-decoration: none;
+        align-items: center;
     }
 
     &:hover{
+        a:hover{
+
+            color: rgb(34, 34, 34);
+        }   
         cursor: crosshair;
         // background-color: rgba(31, 31, 31, 0.178);
         

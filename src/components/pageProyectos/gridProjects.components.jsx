@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react';
-import './projects.styles.scss'
-import Project from './project.component'
+import './pageProjects.styles.scss'
+import TarjetaProject from './tarjetaProject.component'
 import { render } from '@testing-library/react';
 
-import Infotext from './infoText.component';
-import Contact from './contact.component';
+// import Infotext from './infoText.component';
+// import Contact from './contact.component';
 
 
 import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from "gsap/all";
@@ -184,24 +185,24 @@ class Projects extends React.Component {
     render(){
 
         return(
-            <div id="proyectos"> 
+            <div id="proyectos" className="cuadriculaProjectssss"> 
             {/* <div className="box"> */}
-                <div className='box projects'>
+                <div className='box projects cuadriculaProjects'>
                 {
                     
                     this.state.projects.map(({name, id, link, informacion, foto, stack, mTop, gitLink}) => (
-                        <Project urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} hrefGit={gitLink} textBtn={name}/>
+                        <TarjetaProject urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} stack={stack} projectUrl={link} hrefLive={link} hrefGit={gitLink} textBtn={name}/>
                         ))
                     }  
                 </div>
     
-                <div className='box info'>
+                {/* <div className='box info'>
                     <Infotext  />
                 </div>
     
                 <div className='box contact'>
                     <Contact />
-                </div>
+                </div> */}
             </div>
             // </div>
         )
