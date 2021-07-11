@@ -4,11 +4,14 @@ import { Parallax, Background } from 'react-parallax';
 import Menu from '../menu.component';
 import FullBackground from '../home/background.component'
 import Contact from '../contact.component'
-import GridProjects from './gridProjects.components'
+
 import Portada from '../portada.component'
 import Logo from '../logo.component'
 import Infotext from '../infoText.component'
-import './pageProjects.styles.scss'
+import './contactPage.styles.scss';
+
+import { withRouter } from 'react-router-dom';
+
 
 // import { gsap } from "gsap";
 
@@ -16,15 +19,13 @@ import './pageProjects.styles.scss'
 
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { withRouter } from 'react-router-dom';
-
 
 import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from "gsap/all";
 
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-class PageProjects extends Component{
+class ContactPage extends Component{
 
     state = {
         frases: []
@@ -73,7 +74,7 @@ class PageProjects extends Component{
                     {/* <Portada /> */}
                     {/* <FullBackground /> */}
                     {/* <Portada /> */}
-                    <GridProjects />
+                    {/* <GridProjects /> */}
                     {/* <div className="container"> */}
                         {/* <div className="panel">
                         </div>
@@ -93,4 +94,4 @@ class PageProjects extends Component{
 
 }
 
-export default withRouter(PageProjects);
+export default withRouter(ContactPage);

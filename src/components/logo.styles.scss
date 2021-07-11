@@ -1,6 +1,6 @@
 .logo{
     position: fixed;
-    width: 99vw;
+    width: 30vw;
     top: 30px;
     left: 70px;
     display: flex;
@@ -8,6 +8,8 @@
     font-family: 'Barrio', cursive;
     font-size: 2rem;
     color: #ffffffb6;
+    text-decoration: none;
+    z-index: 1000;
 }
 
 .logo canvas{

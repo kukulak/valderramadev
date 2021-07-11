@@ -5,15 +5,15 @@ import './menuItem.styles.scss'
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
+import { Link, withRouter } from 'react-router-dom';
+
+
 const Menuitem = ({nombre, link}) =>(
 
-    <div className='menuItem'> 
-        <a href={link}>{nombre}</a>
-    </div>
-       
-
-        
-   
+    <Link to={link} className='menuItem'> 
+       {nombre}
+    </Link>
+             
 );
 
-export default Menuitem;
+export default withRouter(Menuitem);

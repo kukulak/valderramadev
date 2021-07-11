@@ -1,6 +1,8 @@
 import React from 'react';
 import './logo.styles.scss'
 
+import { Link, withRouter } from 'react-router-dom';
+
 import Distortion from "./distortionsBlotter/distortion.js";
 
 // import { withRouter } from 'react-router-dom';
@@ -10,13 +12,13 @@ import Distortion from "./distortionsBlotter/distortion.js";
 
 const Logo = ({url}) =>(
 
-    <div className='logo'> 
+    <Link to='/' className='logo'> 
         {/* <img src={url} alt="logo" /> */}
-        <h1>valderrama</h1>
+        valderrama
         {/* <Distortion text='valderrama' /> */}
-    </div>
+    </Link>
            
    
 );
 
-export default Logo;
+export default withRouter(Logo);

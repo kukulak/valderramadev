@@ -45,7 +45,7 @@ class Contact extends React.Component {
                 <a href="https://music.youtube.com/watch?v=P8LCrzZ3VSU&feature=share" target="_blank" rel="noopener noreferrer">
                    <img src={ iconMusic } width="100" alt="youTubeMusic" />
                    </a>
-                   <br /><br /> Esto ando escuchando 
+                   <br /><br /> Escuchando 
             </div>
 
         </div>

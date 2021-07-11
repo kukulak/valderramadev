@@ -16,6 +16,7 @@ import './home.styles.scss'
 
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { withRouter } from 'react-router-dom';
 
 import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from "gsap/all";
 
@@ -66,7 +67,7 @@ class HomePage extends Component{
                 
 
                 <div className="home">
-                    <Menu />
+                    {/* <Menu /> */}
                     <Logo />
                     {/* <Portada /> */}
                     {/* <FullBackground /> */}
@@ -91,4 +92,4 @@ class HomePage extends Component{
 
 }
 
-export default HomePage;
+export default withRouter(HomePage);
