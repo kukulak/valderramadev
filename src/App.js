@@ -11,6 +11,8 @@ import Logo from './components/logo.component'
 
 import Menu from '../src/components/menu.component'
 
+import Footer from '../src/components/footer.component'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -62,6 +64,8 @@ function App() {
               
            
         </Switch> 
+
+        <Footer />
         {/* <SuperHome/> */}
       {/* </ParallaxProvider> */}
 

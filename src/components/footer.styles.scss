@@ -1,0 +1,21 @@
+.footer{
+    padding: 40px 80px;
+    background-color: black;
+    font-size: 12;
+    color: rgb(133, 133, 133);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    a{
+        color: rgb(170, 170, 170);
+        text-decoration: none;
+    }
+    .gridMenus{
+        display: flex;
+        gap: 60px;
+    }
+    .menuItem{
+        font-weight: 600;
+        margin: 0;
+    }
+}
