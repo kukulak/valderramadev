@@ -25,3 +25,16 @@
 #proyectos{
     // background-image: url('../assets/fondorayos.png');
 }
+
+.info{
+    display: grid;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 600px) {
+   .projects{
+       gap: 50px;
+   }
+  }

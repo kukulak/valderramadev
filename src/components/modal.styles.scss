@@ -1,0 +1,16 @@
+.modalContenedor{
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: blanchedalmond;
+    font-size: larger;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 5000;
+    text-align: center;
+    display: grid;
+    padding-right: 15px;
+    display: none;
+}

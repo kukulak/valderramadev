@@ -42,6 +42,16 @@ code {
 }
 
 
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: #ff5e00;
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: #ff5e00;
+}
+
 .noSelect{
   user-select: none;
   -moz-user-select: none;

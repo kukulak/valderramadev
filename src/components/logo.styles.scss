@@ -5,7 +5,7 @@
     left: 70px;
     display: flex;
     justify-content: flex-start;
-    font-family: 'Barrio', cursive;
+    font-family: 'Barrio', sans-serif;
     font-size: 2rem;
     color: #ffffffb6;
     text-decoration: none;
@@ -14,4 +14,19 @@
 
 .logo canvas{
     width: 180px !important;
+}
+
+
+
+@media (max-width: 600px) {
+    .logo{
+        justify-content: center;
+        left: auto;
+        top: 0px;
+        width: 100vw;
+        background: black;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        box-shadow: 0px 7px 20px 0 black;
+    }
 }

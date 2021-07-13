@@ -15,13 +15,13 @@ import BasicBtn from './basicBtn.component';
 
 
 
-const ProjectInfo = ({icono, hrefLive, hrefGit, textInfo}) =>(
+const ProjectInfo = ({icono, hrefLive, hrefGit, textInfo, text}) =>(
 
     <div className='projectInfo'> 
         <p>{textInfo}</p>
         {/* <Infotext /> */}
         <div className="botones">
-            <BasicBtn icono={iconLive} href={hrefLive} text='Live' />
+            <BasicBtn icono={iconLive} href={hrefLive} text={text} />
             <BasicBtn icono={iconGit} href={hrefGit} text='GitHub' />
         </div>
             

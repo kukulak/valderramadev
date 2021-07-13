@@ -7,8 +7,19 @@
 .menu a{
     color: white;
     font-size: 1.3em;
-    font-family: 'Barrio', cursive;
-    font-family: 'Bigshot One', cursive;
+    font-family: 'Barrio', sans-serif;
+    font-family: 'Bigshot One', sans-serif;
     text-decoration: none;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+}
+
+.is-active{
+    color: grey !important;
+    pointer-events: none;
 
 }

@@ -1,10 +1,10 @@
 .infoText{
     color: whitesmoke;
-    width: 80vw;
+    width: 70vw;
     display: grid;
     align-content: center;
     justify-items: center;
-    margin-top: 332px;
+    margin-top: 232px;
     margin-bottom: 300px;
     p{
         width: 71vw;
@@ -17,4 +17,36 @@
             font-size: 21px;
         }
     }
+
+    .downLoadCV{
+        background-color: #ff5e00;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 7px;
+        justify-self: start;
+        margin: 51px 0 0;
+        transition: 1s;
+        &:hover{
+            background-color: #361401; 
+        }
+    }
+
 }
+
+
+@media (max-width: 600px) {
+    .infoText{  
+        width: 100vw;
+        margin-bottom: auto;
+        p{
+            font-size: 1em;
+            strong{
+                font-size: 18px;
+            }
+        }
+        .downLoadCV{
+            justify-self: center;
+        }
+    }
+  }

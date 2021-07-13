@@ -18,23 +18,23 @@ function hoverAnim(element){
 }
 
 function hoverOutAnim(element){
-    element.style.marginLeft = '5000px'
-    element.style.width = '1500px'
+    element.style.marginLeft = '4600px'
+    element.style.width = '500px'
 }
 
 
 
-function ProjectImg({urlImg, name, textInfo, hrefLive, hrefGit, text}) {
+function ProjectTarjetaImg({urlImg, name, textInfo, hrefLive, hrefGit}) {
 
     
-    const proCon = React.createRef();
-    const proInfo = React.createRef();
+    const proTCon = React.createRef();
+    const proTInfo = React.createRef();
     return(
 
-        <div onMouseOut={() => hoverOutAnim(proInfo.current)} onMouseOver={() => hoverAnim(proInfo.current)} ref={proCon} className='projectImg'> 
+        <div onMouseOut={() => hoverOutAnim(proTInfo.current)} onMouseOver={() => hoverAnim(proTInfo.current)} ref={proTCon} className='projectTarjetaImg'> 
 
-            <div className="contenedorInfo unselectable" ref={proInfo}>
-                <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit} text={text}/>
+            <div className="contenedorTarjetaInfo unselectable" ref={proTInfo}>
+                <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             </div>
 
             <img className="imgProject" src={urlImg} alt={name} />
@@ -45,4 +45,4 @@ function ProjectImg({urlImg, name, textInfo, hrefLive, hrefGit, text}) {
            
         }
            
-export default ProjectImg;
+export default ProjectTarjetaImg;

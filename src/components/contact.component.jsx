@@ -8,24 +8,62 @@ import BasicBtn from './basicBtn.component'
 
 import iconMusic from '../assets/icons/Youtube-Music-Logo.png'
 
+import axios from 'axios';
+
 class Contact extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        name: '',
+        nombre: '',
         email: '',
-        message: ''
+        mensaje: ''
       }
+    }
+
+    handleSubmit(e){
+      e.preventDefault();
+      axios({
+        method: "post", 
+        url:"http://localhost:3002/contacto.php", 
+        data:  this.state
+      })
+      .then((response)=>{
+          this.setState({
+              mailSent: response.data.sent
+          }, () => console.log(this.state)) // NB! setState accepts callbacks
+                
+          
+        if (response.data.status === 'success') {
+          alert(this.state.nombre + " tu mensaje fue enviado."); 
+          this.resetForm()
+        } else if (response.data.status === 'fail') {
+          alert(this.state.nombre + " el mensaje no se envio")
+        }
+      })
+      .catch(error => this.setState({ error: error.message }));
+
+      // .then(result => {
+      //     this.setState({
+      //       mailSent: result.data.sent
+      //     }, () => console.log(this.state)) // NB! setState accepts callbacks
+      //   })
+      //   .catch(error => this.setState({ error: error.message }));
+
+
+    }
+
+    resetForm(){
+      this.setState({nombre: '', email: '', mensaje: ''})
     }
   
     render() {
       return(
         <div className="contactContainer">
-          <form id="contact-form" className="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
+          <form id="contact-form" className="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST" action="">
 
             <div className="contactNombre contactGeneral">
               <label htmlFor="name">NOMBRE</label>
-              <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+              <input type="text" className="form-control" value={this.state.nombre} onChange={this.onNameChange.bind(this)} />
             </div>
 
             <div className="contactEmail contactGeneral">
@@ -35,10 +73,16 @@ class Contact extends React.Component {
 
             <div className="contactMensaje contactGeneral">
               <label htmlFor="message">MENSAJE</label>
-              <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+              <textarea className="form-control" rows="5" value={this.state.mensaje} onChange={this.onMessageChange.bind(this)} />
             </div>
 
             <button type="submit" className="contactEnviar contactGeneral">ENVIAR</button>
+
+            <div>
+                    {this.state.mailSent &&
+                        <div>Gracias por escribir, pronto me pondre en contacto.</div>
+                    }
+            </div>
           </form>
 
             <div className="linkMusic">
@@ -53,7 +97,7 @@ class Contact extends React.Component {
     }
   
     onNameChange(event) {
-      this.setState({name: event.target.value})
+      this.setState({nombre: event.target.value})
     }
   
     onEmailChange(event) {
@@ -61,7 +105,7 @@ class Contact extends React.Component {
     }
   
     onMessageChange(event) {
-      this.setState({message: event.target.value})
+      this.setState({mensaje: event.target.value})
     }
   
     handleSubmit(event) {

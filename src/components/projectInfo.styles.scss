@@ -32,3 +32,21 @@
 .projectInfo{
     margin: 90px auto;
 }
+
+
+@media (max-width: 600px) {
+    .projectInfo{
+        margin: 21px auto;
+        p{
+            max-width: 70vw;
+            font-size: 10px;
+        }
+    }
+
+    .botones{
+        flex-wrap: nowrap;
+        transform: scale(0.7);
+    }
+}
+
+

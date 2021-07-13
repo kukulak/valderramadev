@@ -5,14 +5,16 @@ import './menuItem.styles.scss'
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
+import { NavLink } from "react-router-dom";
+
 import { Link, withRouter } from 'react-router-dom';
 
 
 const Menuitem = ({nombre, link}) =>(
 
-    <Link to={link} className='menuItem'> 
+    <NavLink to={link} className='menuItem' activeClassName="is-active"> 
        {nombre}
-    </Link>
+    </NavLink>
              
 );
 

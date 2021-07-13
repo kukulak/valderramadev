@@ -12,7 +12,7 @@ import Distortion from "./distortionsBlotter/distortion.js";
 
 const Logo = ({url}) =>(
 
-    <Link to='/' className='logo'> 
+    <Link to='/' className='logo noselect'> 
         {/* <img src={url} alt="logo" /> */}
         valderrama
         {/* <Distortion text='valderrama' /> */}

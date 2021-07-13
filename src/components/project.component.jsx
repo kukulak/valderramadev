@@ -28,7 +28,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 // }
 
 
-function Project({hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop}){
+function Project({hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop, text}){
     const proCon = React.createRef();
     const proInfo = React.createRef();
 
@@ -72,7 +72,7 @@ function Project({hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, t
 
         <div className='projectContenedor' style={{ marginTop : mTop }}> 
             <ProjectBtn projectUrl={projectUrl} textBtn={textBtn}/>
-            <ProjectImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
+            <ProjectImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit} text={text}/>
             {/* <div className="contenedorInfo" ref={proInfo}>
                 <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             </div> */}

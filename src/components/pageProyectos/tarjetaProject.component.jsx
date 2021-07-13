@@ -1,7 +1,7 @@
 import React, { Component, useState, useEffect, useContext } from 'react';
 import './pageProjects.styles.scss'
 import ProjectBtn from '../projectBtn.component'
-import ProjectImg from '../projectImg.component'
+import ProjectTarjetaImg from '../projectTarjetaImg.component'
 // import ProjectInfo from './projectInfo.component'
 import ProjectName from '../projectName.component'
 import ProjectStack from '../projectStack.component'
@@ -70,9 +70,9 @@ function TarjetaProject({hrefGit, hrefLive, urlImg, name, stack, textBtn, projec
         
         // <div onMouseOut={() => hoverOutAnim(proInfo.current)} onMouseOver={() => hoverAnim(proInfo.current)} ref={proCon} className='projectContenedor' style={{ marginTop : mTop }}> 
 
-        <div className='projectContenedor' style={{ marginTop : mTop }}> 
+        <div className='projectTarjetaContenedor' style={{ marginTop : mTop }}> 
             <ProjectBtn projectUrl={projectUrl} textBtn={textBtn}/>
-            <ProjectImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
+            <ProjectTarjetaImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             {/* <div className="contenedorInfo" ref={proInfo}>
                 <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             </div> */}

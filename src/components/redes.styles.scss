@@ -6,3 +6,12 @@
     color: white;
     justify-self: end;
 }
+
+@media (max-width: 600px) {
+    .redes{
+        // margin: 30px 0;
+        // gap: 20px;
+        justify-self: center;
+        flex-wrap: wrap;
+    }
+  }

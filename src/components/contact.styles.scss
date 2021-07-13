@@ -76,3 +76,73 @@
 .linkMusic{
     align-self: center;
 }
+
+
+
+@media (max-width: 1024px) {
+    .contactContainer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 100px;
+        gap: 70px;
+    }
+
+    .contactForm{
+        max-width: inherit;
+    }
+
+    .contactMensaje{
+
+        textarea{
+            padding: 10px 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+            width: auto;
+        }
+    }
+
+    .contactGeneral{
+        input{
+            width: 400px;
+        }
+    }
+
+    .contactEnviar{
+        justify-self: end;
+        max-width: 128px;
+        padding: 15px 35px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+  }
+
+@media (max-width: 600px) {
+    .contactContainer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-bottom: 100px;
+    }
+
+    .contactForm{
+        max-width: inherit;
+    }
+
+    .contactMensaje{
+
+        textarea{
+            padding: 10px 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+            width: auto;
+        }
+    }
+
+    .contactGeneral{
+        input{
+            width: auto;
+        }
+    }
+
+  }
+

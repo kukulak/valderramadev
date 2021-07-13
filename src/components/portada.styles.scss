@@ -38,8 +38,8 @@
         font-size: 25em;
         font-size: 23vw;
         font-size: 28vw;
-        font-family: 'Barrio', cursive;
-        font-family: 'Bigshot One', cursive;
+        font-family: 'Barrio', sans-serif;
+        font-family: 'Bigshot One', sans-serif;
         justify-self: center;
         align-self: center;
 
@@ -50,11 +50,48 @@
         grid-row: 1;
         grid-column: 1;
         font-size: 4em;
-        font-family: 'Barrio', cursive;
-        font-family: 'Bigshot One', cursive;
+        font-family: 'Barrio', sans-serif;
+        font-family: 'Bigshot One', sans-serif;
         grid-row: 1;
         grid-column: 1;
         justify-self: center;
         align-self: center;
     }
 }
+
+
+@media (max-width: 1024px) {
+    .portada{
+        h1{
+            font-size: 24vw;
+        }
+        p{
+            font-size: 4em;
+        }
+        .full{
+         margin-bottom: -37px;
+        }
+        .developer{
+         margin-top: -35px;
+        }
+    }
+ }
+
+@media (max-width: 600px) {
+   .portada{
+       h1{
+           font-size: 23vw;
+       }
+       p{
+           font-size: 1.6em;
+       }
+       .full{
+        margin-bottom: -12px;
+       }
+       .developer{
+        margin-top: -13px;
+       }
+   }
+}
+
+

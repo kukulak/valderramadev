@@ -7,11 +7,16 @@ import PageProjects from './components/pageProyectos/pageProyectos.component';
 import ContactPage from './components/contactPage/contactPage.component';
 // import { ParallaxProvider } from 'react-scroll-parallax';
 
+import VideoModal from './components/modal.component';
+import ScrollToTop from './components/scrollTop.component';
+
 import Logo from './components/logo.component'
 
 import Menu from '../src/components/menu.component'
 
 import Footer from '../src/components/footer.component'
+
+
 
 import {
   BrowserRouter as Router,
@@ -46,6 +51,9 @@ function App() {
 
       <Menu />
       <Logo />
+    
+      <VideoModal urlVideo=""/>
+      <ScrollToTop />
 
         <Switch>
             <Route exact path="/">

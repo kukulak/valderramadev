@@ -30,7 +30,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/morris.png",
                 "stack": "SASS / ReactJs",
                 "informacion": "Página para el artista Morris",
-                "link": "/",
+                "link": "http://morrisart.com.mx/",
                 "gitLink": "https://github.com/kukulak/morrisArt",
                 "mTop": "23"
             },   
@@ -41,7 +41,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/dannyychris.png",
                 "stack": "Django",
                 "informacion":"3 diferentes templates para aumentar información",
-                "link": "/acerca-de-mi",
+                "link": "http://www.dannyychris.com/",
                 "gitLink": "https://github.com/kukulak/dc-site",
                 "mTop": "43"
             },
@@ -52,7 +52,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/3bh.png",
                 "stack": "SASS / ReactJs / WP Rest Api",
                 "informacion":"Página en construccion",
-                "link": "/colecciones",
+                "link": "/video/3bh",
                 "gitLink": "https://github.com/kukulak/3bh-react",
                 "mTop": "23"
             },
@@ -63,7 +63,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/ahorraahora.png",
                 "stack": "Django",
                 "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
-                "link": "/contacto",
+                "link": "http://www.ahorraahora.com/",
                 "gitLink": "https://github.com/kukulak/ahorros",
                 "mTop": "63"
             },
@@ -74,7 +74,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/frutas.png",
                 "stack": "JavaScript Vainilla",
                 "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
-                "link": "/contacto",
+                "link": "http://www.frutasentemporada.com/",
                 "gitLink": "https://github.com/kukulak/frutas",
                 "mTop": "13"
             },
@@ -85,7 +85,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/habla.png",
                 "stack": "Django / JavaScript",
                 "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
-                "link": "/contacto",
+                "link": "http://www.palabrahablada.com/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
                 "mTop": "73"
             }

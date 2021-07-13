@@ -7,6 +7,9 @@ import Infotext from './infoText.component';
 import Contact from './contact.component';
 
 
+import Fade from 'react-reveal/Fade'; // Importing Zoom effect
+
+
 import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from "gsap/all";
 
 
@@ -30,9 +33,10 @@ class Projects extends React.Component {
                 "foto": "/img/morris.png",
                 "stack": "SASS / ReactJs",
                 "informacion": "Página para el artista Morris",
-                "link": "/",
+                "link": "http://morrisart.com.mx/",
                 "gitLink": "https://github.com/kukulak/morrisArt",
-                "mTop": "23"
+                "mTop": "23",
+                "textBtn": "Live"
             },   
             {
                 "id": 2,
@@ -41,9 +45,10 @@ class Projects extends React.Component {
                 "foto": "/img/dannyychris.png",
                 "stack": "Django",
                 "informacion":"3 diferentes templates para aumentar información",
-                "link": "/acerca-de-mi",
+                "link": "http://www.dannyychris.com/",
                 "gitLink": "https://github.com/kukulak/dc-site",
-                "mTop": "43"
+                "mTop": "43",
+                "textBtn": "Live"
             },
             {
                 "id": 3,
@@ -52,9 +57,10 @@ class Projects extends React.Component {
                 "foto": "/img/3bh.png",
                 "stack": "SASS / ReactJs / WP Rest Api",
                 "informacion":"Página en construccion",
-                "link": "/colecciones",
+                "link": "/video/3bh",
                 "gitLink": "https://github.com/kukulak/3bh-react",
-                "mTop": "23"
+                "mTop": "23",
+                "textBtn": "Video"
             },
             {
                 "id": 4,
@@ -63,9 +69,10 @@ class Projects extends React.Component {
                 "foto": "/img/ahorraahora.png",
                 "stack": "Django",
                 "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
-                "link": "/contacto",
+                "link": "http://www.ahorraahora.com/",
                 "gitLink": "https://github.com/kukulak/ahorros",
-                "mTop": "63"
+                "mTop": "63",
+                "textBtn": "Live"
             },
             {
                 "id": 5,
@@ -74,9 +81,10 @@ class Projects extends React.Component {
                 "foto": "/img/frutas.png",
                 "stack": "JavaScript Vainilla",
                 "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
-                "link": "/contacto",
+                "link": "http://www.frutasentemporada.com/",
                 "gitLink": "https://github.com/kukulak/frutas",
-                "mTop": "13"
+                "mTop": "13",
+                "textBtn": "Live"
             },
             {
                 "id": 6,
@@ -85,9 +93,10 @@ class Projects extends React.Component {
                 "foto": "/img/habla.png",
                 "stack": "Django / JavaScript",
                 "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
-                "link": "/contacto",
+                "link": "http://www.palabrahablada.com/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
-                "mTop": "73"
+                "mTop": "73",
+                "textBtn": "Live"
             }
             ]
         }
@@ -185,12 +194,19 @@ class Projects extends React.Component {
 
         return(
             <div id="proyectos"> 
+           
             {/* <div className="box"> */}
                 <div className='box projects'>
+                    {/* {
+                        this.state.projects.map(({foto}) => (
+                          <VideoModal urlVideo= {process.env.PUBLIC_URL + foto}/>
+                          ))
+                    } */}
                 {
                     
-                    this.state.projects.map(({name, id, link, informacion, foto, stack, mTop, gitLink}) => (
-                        <Project urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} hrefGit={gitLink} textBtn={name}/>
+                    this.state.projects.map(({name, id, link, informacion, foto, stack, mTop, gitLink, textBtn}) => (
+                        <Fade ><Project urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} hrefGit={gitLink} textBtn={name} text={textBtn}/></Fade>
+                        
                         ))
                     }  
                 </div>
