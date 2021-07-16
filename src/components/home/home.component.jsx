@@ -30,7 +30,7 @@ class HomePage extends Component{
     };
 
     componentDidMount() {
-        let sections = gsap.utils.toArray(".panel") 
+        // let sections = gsap.utils.toArray(".panel") 
         
         // gsap.to(sections, {
         //     // x: -1150,
@@ -58,17 +58,17 @@ class HomePage extends Component{
         return(
 
                         <Parallax
-            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} strength={-5200}>
             
                     {/* <Background className="custom-bg">
-                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" />
+                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.jpg'} alt="" />
                       
                     </Background> */}
                 
 
                 <div className="home">
                     {/* <Menu /> */}
-                    <Logo />
+                    {/* <Logo /> */}
                     {/* <Portada /> */}
                     {/* <FullBackground /> */}
                     <Portada />

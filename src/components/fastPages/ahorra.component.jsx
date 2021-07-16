@@ -7,7 +7,7 @@ import Infotext from '../infoText.component';
 
 
 import Contact from '../contact.component';
-
+import { Parallax, Background } from 'react-parallax';
 
 import Caso from '../caso.component';
 
@@ -35,11 +35,11 @@ class Ahorra extends React.Component {
                 id: 4,
                 caso: 'ahorra',
                 nombre: 'Ahorra Ahora',
-                imgPrincipal: '/img/ahorraahora.png',
-                imgUno: "/img/ahorra-home.png",
-                imgDos: "/img/ahorra-p1.png",
-                imgTres: "/img/ahorra-p2.png",
-                imgCuatro: "/img/ahorra-p3.png",
+                imgPrincipal: '/img/ahorraahora.jpg',
+                imgUno: "/img/ahorra-home.jpg",
+                imgDos: "/img/ahorra-p1.jpg",
+                imgTres: "/img/ahorra-p2.jpg",
+                imgCuatro: "/img/ahorra-p3.jpg",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
                 info: "Diseño y Full Stack development",
                 stack: "Django",
@@ -55,72 +55,6 @@ class Ahorra extends React.Component {
     componentDidMount(){
 
 
-        let container = document.querySelector("#casoT");
-
-        let height;
-        function setHeight() {
-            height = container.clientHeight;
-            // height = 1000;
-            console.log("DOCheight", document.body.style.height)
-
-            document.body.style.height = height + "px";
-            console.log("height", height)
-        }
-        // ScrollTrigger.addEventListener("refreshInit", setHeight);
-        ScrollTrigger.addEventListener("refreshInit", setHeight);
-
-        // smooth scrolling container
-        gsap.to(container, {
-        // y: () => -(height - document.documentElement.clientHeight),
-        y: () => -(height - height),
-        ease: "none",
-        scrollTrigger: {
-            trigger: document.body,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1,
-            invalidateOnRefresh: true,
-        }
-        });
-
-        // scrolltrigger for each box
-        gsap.utils.toArray('.box').forEach(box => {
-            gsap.to(box, {
-                backgroundColor: '#ffffff00',
-                scrollTrigger: {
-                trigger: box,
-                start: 'top center',
-                toggleActions: 'play none none reverse',
-                markers: false,
-                id: 'proID'
-                }
-            });
-        });
-
-   
-
-        function setupLinks(scroller) {
-        let linkElements = gsap.utils.toArray('.nav a'),
-            linkTargets = linkElements.map(e => document.querySelector(e.getAttribute("href"))),
-            linkPositions = [],
-            calculatePositions = () => {
-                let offset = gsap.getProperty(scroller, "y");
-                linkTargets.forEach((e, i) => linkPositions[i] = e.getBoundingClientRect().top - offset);
-            };
-        
-        linkElements.forEach((element, i) => {
-            
-            element.addEventListener("click", e => {
-            e.preventDefault();
-            gsap.to(window, {scrollTo: linkPositions[i], ease: "power4", overwrite: true});
-            });
-        });
-        
-        ScrollTrigger.addEventListener("refresh", calculatePositions);
-        }
-
-        setupLinks(container);
-
 
     }
 
@@ -130,6 +64,9 @@ class Ahorra extends React.Component {
     render(){
 
         return(
+            <Parallax
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} strength={-5200}>
+
             <div id="casoT"> 
            
           
@@ -158,16 +95,14 @@ class Ahorra extends React.Component {
                     
                 }
                 </div>
-{/* 
-                <div className='box info'>
-                    <Infotext  />
-                </div> */}
+
     
                 <div className='box contact'>
                     <Contact />
                 </div>
             </div>
-            // </div>
+            </Parallax>
+           
         )
     }
 

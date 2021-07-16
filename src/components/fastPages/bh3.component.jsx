@@ -7,7 +7,7 @@ import Infotext from '../infoText.component';
 
 
 import Contact from '../contact.component';
-
+import { Parallax, Background } from 'react-parallax';
 
 import Caso from '../caso.component';
 
@@ -35,8 +35,8 @@ class BH3 extends React.Component {
                 id: 3,
                 caso: '3BH',
                 nombre: '3BH',
-                imgPrincipal: '/img/3bh.png',
-                imgUno: "/img/3bh-home.png",
+                imgPrincipal: '/img/3bh.jpg',
+                imgUno: "/img/3bh-home.jpg",
                 imgDos: " ",
                 imgTres: " ",
                 imgCuatro: " ",
@@ -55,72 +55,6 @@ class BH3 extends React.Component {
     componentDidMount(){
 
 
-        let container = document.querySelector("#casoT");
-
-        let height;
-        function setHeight() {
-            height = container.clientHeight;
-            // height = 1000;
-            console.log("DOCheight", document.body.style.height)
-
-            document.body.style.height = height + "px";
-            console.log("height", height)
-        }
-        // ScrollTrigger.addEventListener("refreshInit", setHeight);
-        ScrollTrigger.addEventListener("refreshInit", setHeight);
-
-        // smooth scrolling container
-        gsap.to(container, {
-        // y: () => -(height - document.documentElement.clientHeight),
-        y: () => -(height - height),
-        ease: "none",
-        scrollTrigger: {
-            trigger: document.body,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: 1,
-            invalidateOnRefresh: true,
-        }
-        });
-
-        // scrolltrigger for each box
-        gsap.utils.toArray('.box').forEach(box => {
-            gsap.to(box, {
-                backgroundColor: '#ffffff00',
-                scrollTrigger: {
-                trigger: box,
-                start: 'top center',
-                toggleActions: 'play none none reverse',
-                markers: false,
-                id: 'proID'
-                }
-            });
-        });
-
-   
-
-        function setupLinks(scroller) {
-        let linkElements = gsap.utils.toArray('.nav a'),
-            linkTargets = linkElements.map(e => document.querySelector(e.getAttribute("href"))),
-            linkPositions = [],
-            calculatePositions = () => {
-                let offset = gsap.getProperty(scroller, "y");
-                linkTargets.forEach((e, i) => linkPositions[i] = e.getBoundingClientRect().top - offset);
-            };
-        
-        linkElements.forEach((element, i) => {
-            
-            element.addEventListener("click", e => {
-            e.preventDefault();
-            gsap.to(window, {scrollTo: linkPositions[i], ease: "power4", overwrite: true});
-            });
-        });
-        
-        ScrollTrigger.addEventListener("refresh", calculatePositions);
-        }
-
-        setupLinks(container);
-
 
     }
 
@@ -130,6 +64,8 @@ class BH3 extends React.Component {
     render(){
 
         return(
+            <Parallax
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} strength={-5200}>
             <div id="casoT"> 
            
           
@@ -167,6 +103,7 @@ class BH3 extends React.Component {
                     <Contact />
                 </div>
             </div>
+            </Parallax>
             // </div>
         )
     }

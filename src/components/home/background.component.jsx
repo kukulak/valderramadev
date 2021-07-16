@@ -126,7 +126,7 @@ class FullBackground extends React.Component {
             // <div id='backs' className='fullBackground'> 
 
             <Parallax
-            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} 
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} 
             renderLayer={percentage => (
                 <div
                     style={{
@@ -142,7 +142,7 @@ class FullBackground extends React.Component {
         >
             
                     {/* <Background className="custom-bg">
-                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" />
+                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.jpg'} alt="" />
                       
                     </Background> */}
                 </Parallax>

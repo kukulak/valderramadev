@@ -60,7 +60,7 @@ class InfoPage extends Component{
         return(
 
                         <Parallax
-            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} strength={-5200}>
                 
 
                 <div className="home">

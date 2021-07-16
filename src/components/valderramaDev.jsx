@@ -27,7 +27,7 @@ class SuperHome extends React.Component {
                 "id": 1,
                 "name": "Morris",
                 "btnText": "Morris",
-                "foto": "/img/morris.png",
+                "foto": "/img/morris.jpg",
                 "stack": "SASS / ReactJs",
                 "informacion": "Página para el artista Morris",
                 "link": "http://morrisart.com.mx/",
@@ -38,7 +38,7 @@ class SuperHome extends React.Component {
                 "id": 2,
                 "name": "dannyychris.com",
                 "btnText": "dannyychris.com",
-                "foto": "/img/dannyychris.png",
+                "foto": "/img/dannyychris.jpg",
                 "stack": "Django",
                 "informacion":"3 diferentes templates para aumentar información",
                 "link": "http://www.dannyychris.com/",
@@ -49,7 +49,7 @@ class SuperHome extends React.Component {
                 "id": 3,
                 "name": "3BH",
                 "btnText": "ver video",
-                "foto": "/img/3bh.png",
+                "foto": "/img/3bh.jpg",
                 "stack": "SASS / ReactJs / WP Rest Api",
                 "informacion":"Página en construccion",
                 "link": "/video/3bh",
@@ -60,7 +60,7 @@ class SuperHome extends React.Component {
                 "id": 4,
                 "name": "ahorraAhora.com",
                 "btnText": "ahorraAhora.com",
-                "foto": "/img/ahorraahora.png",
+                "foto": "/img/ahorraahora.jpg",
                 "stack": "Django",
                 "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
                 "link": "http://www.ahorraahora.com/",
@@ -71,7 +71,7 @@ class SuperHome extends React.Component {
                 "id": 5,
                 "name": "frutasentemporada.com",
                 "btnText": "frutasentemporada.com",
-                "foto": "/img/frutas.png",
+                "foto": "/img/frutas.jpg",
                 "stack": "JavaScript Vainilla",
                 "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
                 "link": "http://www.frutasentemporada.com/",
@@ -82,7 +82,7 @@ class SuperHome extends React.Component {
                 "id": 6,
                 "name": "palabraHablada.com",
                 "btnText": "palabraHablada.com",
-                "foto": "/img/habla.png",
+                "foto": "/img/habla.jpg",
                 "stack": "Django / JavaScript",
                 "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
                 "link": "http://www.palabrahablada.com/",
@@ -102,7 +102,7 @@ class SuperHome extends React.Component {
         let height;
         function setHeight() {
         height = container.clientHeight;
-        document.body.style.height = height + "px";
+        // document.body.style.height = height + "px";
         }
         ScrollTrigger.addEventListener("refreshInit", setHeight);
 

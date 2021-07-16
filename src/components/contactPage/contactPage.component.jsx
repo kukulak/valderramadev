@@ -60,10 +60,10 @@ class ContactPage extends Component{
         return(
 
                         <Parallax
-            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
+            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} strength={-5200}>
             
                     {/* <Background className="custom-bg">
-                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" />
+                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.jpg'} alt="" />
                       
                     </Background> */}
                 

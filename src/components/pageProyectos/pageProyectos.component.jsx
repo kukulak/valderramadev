@@ -39,7 +39,7 @@ class PageProjects extends Component{
     render(){
         return(
 
-            <Parallax bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
+            <Parallax bgImage={process.env.PUBLIC_URL + 'img/fondorayos.jpg'} strength={-5200}>
             
                 <div className="home">
                    

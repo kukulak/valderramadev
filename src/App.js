@@ -41,9 +41,9 @@ function App({match}) {
       
        
     <div className="App">
+      <ScrollToTop />
       <Menu />
       <Logo />
-      <ScrollToTop />
 
       <Switch>
         <Route exact path="/" component={HomePage} />
