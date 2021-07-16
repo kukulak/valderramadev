@@ -61,32 +61,17 @@ class InfoPage extends Component{
 
                         <Parallax
             bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
-            
-                    {/* <Background className="custom-bg">
-                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" />
-                      
-                    </Background> */}
                 
 
                 <div className="home">
-                    {/* <Menu /> */}
-                    {/* <Logo /> */}
-                    {/* <Portada /> */}
-                    {/* <FullBackground /> */}
-                    {/* <Portada /> */}
-                    {/* <GridProjects /> */}
-                    {/* <div className="container"> */}
-                        {/* <div className="panel">
-                        </div>
-                        <div className="panel">
-                        </div> */}
+              
                         <div className="panel">
                             <Infotext />
                         </div>
                         <div className="panelContact">
                             <Contact />
                         </div>
-                    {/* </div> */}
+                 
                 </div>
              </Parallax>
             )

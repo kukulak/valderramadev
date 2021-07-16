@@ -15,11 +15,25 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
 
-function VideoModal({urlVideo, mTop}){
-    const proCon = React.createRef();
-    const proInfo = React.createRef();
+function VideoModal({urlVideo, mTop, identificador}){
 
-  
+    
+    
+    const proCon = React.createRef();
+    const modal = React.createRef()
+    const proInfo = React.createRef();
+    
+
+    function closeModal(e){
+         e.preventDefault();
+         modal.current.style.display = 'none'
+         console.log('modal closed!');
+       }
+    useEffect(() => {
+
+      
+    })
+
 
     useEffect(() => {
         gsap.to(proCon.current,
@@ -50,10 +64,14 @@ function VideoModal({urlVideo, mTop}){
         
   
 
-        <div className='modalContenedor' style={{ marginTop : mTop }}> 
-           <video src={urlVideo}></video>
+        <div ref={modal} className={'modalContenedor ' + identificador} style={{ marginTop : mTop }}> 
+           <video controls src={urlVideo}></video>
 
-           HOLA VIDEO MODAL
+           {/* HOLA VIDEO MODAL */}
+           <button onClick={closeModal}>
+            X 
+           </button>
+
         </div>
         )
            

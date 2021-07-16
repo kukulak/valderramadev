@@ -1,16 +1,28 @@
 .modalContenedor{
-    width: 100vw;
     background-color: rgba(0, 0, 0, 0.842);
     color: blanchedalmond;
     font-size: larger;
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: 0;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    /* height: 100vh; */
     overflow-y: hidden;
     z-index: 5000;
     text-align: center;
     display: grid;
     padding-right: 15px;
+    width: 60vw;
     display: none;
+    video{
+        width: 70vw;
+        align-self: center;
+        justify-self: center;
+    }
+    button{
+        width: fit-content;
+        background: none;
+        justify-self: center;
+        height: fit-content;
+        color: white;
+    }
 }

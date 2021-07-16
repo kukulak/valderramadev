@@ -1,4 +1,9 @@
 import React from 'react';
+
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { addItem } from '../redux/cart/cart.actions';
+
 import './projectInfo.styles.scss'
 
 import Infotext from './infoText.component'
@@ -15,19 +20,31 @@ import BasicBtn from './basicBtn.component';
 
 
 
-const ProjectInfo = ({icono, hrefLive, hrefGit, textInfo, text}) =>(
+const ProjectInfo = ({caso, item, history, match, icono, hrefLive, hrefGit, textInfo, text}) =>{
+    // const { caso, imgUno, imgDos, imgTres, nombre, info, ifLive, linkUrl } = item;
+   
+    return(
 
-    <div className='projectInfo'> 
+        <div className='projectInfo'> 
         <p>{textInfo}</p>
         {/* <Infotext /> */}
         <div className="botones">
+            <div onClick={() => history.push(`${match.url}${caso}`)} className="btnCaso">Ver Caso</div>
             <BasicBtn icono={iconLive} href={hrefLive} text={text} />
             <BasicBtn icono={iconGit} href={hrefGit} text='GitHub' />
         </div>
             
     </div>
            
-   
-);
+        );
+    };
 
-export default ProjectInfo;
+
+const mapDispatchToProps = dispatch =>({
+    addItem: item => dispatch(addItem(item))
+});
+
+
+export default connect (null, mapDispatchToProps)(withRouter(ProjectInfo));
+
+// export default ProjectInfo;

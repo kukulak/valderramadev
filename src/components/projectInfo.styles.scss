@@ -33,6 +33,27 @@
     margin: 90px auto;
 }
 
+.btnCaso{
+
+    background-color: #414141;
+    margin: auto 10px;
+    display: flex;
+    grid-gap: 14px;
+    gap: 14px;
+    padding: 12px 24px;
+    border-radius: 2px;
+    transition: 1s;
+    cursor: pointer;
+    pointer-events: all;
+
+    &:hover{
+        background-color: #505050;
+        box-shadow: 0 0 110px black;
+    }
+}
+
+
+
 
 @media (max-width: 600px) {
     .projectInfo{

@@ -6,6 +6,10 @@ import './general.scss'
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
 
+
+// onClick={closeModal} 
+
+
 const BasicBtn = ({href, text, icono}) =>(
 
         <a className='basicBtn btxt reselect' target="_blank" rel="noreferrer" href={href}>

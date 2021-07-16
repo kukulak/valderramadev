@@ -30,62 +30,29 @@ class PageProjects extends Component{
         frases: []
     };
 
+    
+
     componentDidMount() {
-        let sections = gsap.utils.toArray(".panel") 
-        
-        // gsap.to(sections, {
-        //     // x: -1150,
-        //     xPercent: -120 * (sections.length - 1),
-        //     ease: "none",
-        //     opacity: 1,
-        //     // y: "10%",
-        //     scrollTrigger: {
-        //       trigger: ".container",
-        //       pin: true,
-        //       scrub: 1,
-        //     //   snap: 1 / (sections.length - 1),
-        //       markers: true,
-        //       end: ()=>"+=" + document.querySelector(".container").offsetWidth
-           
-        //     },
-         
-        //   });
-        
-      
-    
-    
-        }
+        window.scrollTo(0, 0);
+               }
+
     render(){
         return(
 
-                        <Parallax
-            bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
+            <Parallax bgImage={process.env.PUBLIC_URL + 'img/fondorayos.png'} strength={-5200}>
             
-                    {/* <Background className="custom-bg">
-                    <img src= {process.env.PUBLIC_URL + 'img/fondorayos.png'} alt="" />
-                      
-                    </Background> */}
-                
-
                 <div className="home">
-                    {/* <Menu /> */}
-                    {/* <Logo /> */}
-                    {/* <Portada /> */}
-                    {/* <FullBackground /> */}
-                    {/* <Portada /> */}
-                    <GridProjects />
-                    {/* <div className="container"> */}
-                        {/* <div className="panel">
-                        </div>
-                        <div className="panel">
-                        </div> */}
-                        {/* <div className="panel">
-                            <Infotext />
-                        </div> */}
+                   
+                   <div className="panel">
+                        <GridProjects />   
+
+                       
+                   </div>
+                    
                         <div className="panelContact">
                             <Contact />
                         </div>
-                    {/* </div> */}
+                 
                 </div>
              </Parallax>
             )

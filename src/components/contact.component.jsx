@@ -24,7 +24,7 @@ class Contact extends React.Component {
       e.preventDefault();
       axios({
         method: "post", 
-        url:"http://localhost:3002/contacto.php", 
+        url:"http://codigosombra.com/valderramadev/contacto.php", 
         data:  this.state
       })
       .then((response)=>{

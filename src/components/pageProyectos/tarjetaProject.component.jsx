@@ -17,68 +17,22 @@ import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from
 
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
-// function hoverAnim(element){
-//     element.style.marginLeft = '0px'
-//     element.style.width = '-webkit-fill-available'
-// }
-
-// function hoverOutAnim(element){
-//     element.style.marginLeft = '5000px'
-//     element.style.width = '1500px'
-// }
 
 
 function TarjetaProject({hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop}){
-    const proCon = React.createRef();
-    const proInfo = React.createRef();
-
-  
-
-    useEffect(() => {
-        gsap.to(proCon.current,
-            {
-            
-                scrollTrigger:{
-                    trigger: proCon.current,
-                    start: "60 90%",
-                    end: "70px center",
-                    pin: false,
-                    scrub: 2,
-                    markers: false,
-                    toggleActions: "play pause resume reset",
-                    id: "my-id",
-                },
-                   
-                    ease: 'none',
-                    
-                    x: -51,
-                    opacity: 1,
-                    duration: 1.5
-            }
-        )
-    });
-
-    // useEffect(()=>{
-    //   if (proCon.current.onMouseOver()) {
-    //       hoverAnim(proInfo.current)
-    //   }
-
-    // //   onMouseOver={hoverAnim(proInfo.current)}
-    // });
+    // const proCon = React.createRef();
+    // const proInfo = React.createRef();
 
     return(
-        
-        // <div onMouseOut={() => hoverOutAnim(proInfo.current)} onMouseOver={() => hoverAnim(proInfo.current)} ref={proCon} className='projectContenedor' style={{ marginTop : mTop }}> 
+       
 
         <div className='projectTarjetaContenedor' style={{ marginTop : mTop }}> 
             <ProjectBtn projectUrl={projectUrl} textBtn={textBtn}/>
             <ProjectTarjetaImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
-            {/* <div className="contenedorInfo" ref={proInfo}>
-                <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
-            </div> */}
             <ProjectName name={name}/>
             <ProjectStack stack={stack}/>
         </div>
+
         )
            
            

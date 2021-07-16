@@ -9,6 +9,7 @@ import ProjectStack from './projectStack.component'
 // import { Link } from 'react-router-dom';
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
+import VideoModal from './modal.component';
 
 
 
@@ -28,7 +29,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 // }
 
 
-function Project({hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop, text}){
+function Project({item, hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop, text, video, caso}){
     const proCon = React.createRef();
     const proInfo = React.createRef();
 
@@ -72,12 +73,17 @@ function Project({hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, t
 
         <div className='projectContenedor' style={{ marginTop : mTop }}> 
             <ProjectBtn projectUrl={projectUrl} textBtn={textBtn}/>
-            <ProjectImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit} text={text}/>
+            <ProjectImg urlImg={urlImg} name={name} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit} text={text} caso={caso}/>
             {/* <div className="contenedorInfo" ref={proInfo}>
                 <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             </div> */}
             <ProjectName name={name}/>
             <ProjectStack stack={stack}/>
+
+            {/* <VideoModal identificador= "3bh" urlVideo={process.env.PUBLIC_URL + "/video/3bhejemplo-portfolio-low.mov"}/> */}
+
+            <VideoModal urlVideo={process.env.PUBLIC_URL + video}/>
+   
         </div>
         )
            

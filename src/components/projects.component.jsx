@@ -36,7 +36,9 @@ class Projects extends React.Component {
                 "link": "http://morrisart.com.mx/",
                 "gitLink": "https://github.com/kukulak/morrisArt",
                 "mTop": "23",
-                "textBtn": "Live"
+                "textBtn": "Live",
+                "video": " ",
+                "caso": "morris"
             },   
             {
                 "id": 2,
@@ -48,7 +50,9 @@ class Projects extends React.Component {
                 "link": "http://www.dannyychris.com/",
                 "gitLink": "https://github.com/kukulak/dc-site",
                 "mTop": "43",
-                "textBtn": "Live"
+                "textBtn": "Live",
+                "video": " ",
+                "caso": "bdc"
             },
             {
                 "id": 3,
@@ -60,7 +64,10 @@ class Projects extends React.Component {
                 "link": "/video/3bh",
                 "gitLink": "https://github.com/kukulak/3bh-react",
                 "mTop": "23",
-                "textBtn": "Video"
+                "textBtn": "Video",
+                "video": "/video/3bhejemplo-portfolio-low.mov",
+                "caso": "3bh"
+                
             },
             {
                 "id": 4,
@@ -72,7 +79,9 @@ class Projects extends React.Component {
                 "link": "http://www.ahorraahora.com/",
                 "gitLink": "https://github.com/kukulak/ahorros",
                 "mTop": "63",
-                "textBtn": "Live"
+                "textBtn": "Live",
+                "video": " ",
+                "caso": "ahorra"
             },
             {
                 "id": 5,
@@ -84,7 +93,9 @@ class Projects extends React.Component {
                 "link": "http://www.frutasentemporada.com/",
                 "gitLink": "https://github.com/kukulak/frutas",
                 "mTop": "13",
-                "textBtn": "Live"
+                "textBtn": "Live",
+                "video": " ",
+                "caso": "frutas"
             },
             {
                 "id": 6,
@@ -96,7 +107,9 @@ class Projects extends React.Component {
                 "link": "http://www.palabrahablada.com/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
                 "mTop": "73",
-                "textBtn": "Live"
+                "textBtn": "Live",
+                "video": " ",
+                "caso": "habla"
             }
             ]
         }
@@ -106,7 +119,7 @@ class Projects extends React.Component {
     componentDidMount(){
 
 
-        let container = document.querySelector("#proyectos");
+        let container = document.querySelector("#proyectosT");
 
         let height;
         function setHeight() {
@@ -193,7 +206,7 @@ class Projects extends React.Component {
     render(){
 
         return(
-            <div id="proyectos"> 
+            <div id="proyectosT"> 
            
             {/* <div className="box"> */}
                 <div className='box projects'>
@@ -204,8 +217,8 @@ class Projects extends React.Component {
                     } */}
                 {
                     
-                    this.state.projects.map(({name, id, link, informacion, foto, stack, mTop, gitLink, textBtn}) => (
-                        <Fade ><Project urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} hrefGit={gitLink} textBtn={name} text={textBtn}/></Fade>
+                    this.state.projects.map(({caso, name, id, link, informacion, foto, stack, mTop, gitLink, textBtn}) => (
+                        <Fade cascade><Project key={id} urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} caso={caso} hrefGit={gitLink} textBtn={name} text={textBtn}/></Fade>
                         
                         ))
                     }  
