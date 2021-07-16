@@ -29,8 +29,8 @@ const ProjectInfo = ({caso, item, history, match, icono, hrefLive, hrefGit, text
         <p>{textInfo}</p>
         {/* <Infotext /> */}
         <div className="botones">
-            <div onClick={() => history.push(`${match.url}${caso}`)} className="btnCaso">Ver Caso</div>
-            <BasicBtn icono={iconLive} href={hrefLive} text={text} />
+            <div onClick={() => history.push(`${caso}`)} className="btnCaso">Ver Caso</div>
+            <BasicBtn icono={iconLive} href={hrefLive} text='Live' />
             <BasicBtn icono={iconGit} href={hrefGit} text='GitHub' />
         </div>
             

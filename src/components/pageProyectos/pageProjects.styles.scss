@@ -15,7 +15,15 @@
             font-size: 22px;
         }
         .botones{
-            margin-top: -10px;
+            margin-top: -25px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            // margin: 10px auto;
+            max-width: 261px;
+            gap: 12px;
+            justify-content: center;
         }
         
         .projectTarjetaContenedor{

@@ -24,7 +24,7 @@ function hoverOutAnim(element){
 
 
 
-function ProjectTarjetaImg({urlImg, name, textInfo, hrefLive, hrefGit}) {
+function ProjectTarjetaImg({caso, urlImg, name, textInfo, hrefLive, hrefGit}) {
 
     
     const proTCon = React.createRef();
@@ -34,7 +34,7 @@ function ProjectTarjetaImg({urlImg, name, textInfo, hrefLive, hrefGit}) {
         <div onMouseOut={() => hoverOutAnim(proTInfo.current)} onMouseOver={() => hoverAnim(proTInfo.current)} ref={proTCon} className='projectTarjetaImg'> 
 
             <div className="contenedorTarjetaInfo unselectable" ref={proTInfo}>
-                <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
+                <ProjectInfo caso={caso} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             </div>
 
             <img className="imgProject" src={urlImg} alt={name} />

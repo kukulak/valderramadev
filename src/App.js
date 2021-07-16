@@ -18,6 +18,10 @@ import CasoDetail from './components/casoDetail.component'
 
 import Ahorra from './components/fastPages/ahorra.component';
 import Morris from './components/fastPages/morris.component';
+import BH3 from './components/fastPages/bh3.component';
+import Bdc from './components/fastPages/bdc.component';
+import Frutas from './components/fastPages/frutas.component';
+import Habla from './components/fastPages/habla.component';
 
 import Logo from './components/logo.component'
 
@@ -51,11 +55,11 @@ function App({match}) {
         <Route exact path='/contacto' component={ContactPage} />
         
         <Route exact path='/morris' component={Morris} />  
-        <Route exact path='/bdc' component={Ahorra} />  
-        <Route exact path='/3bh' component={Ahorra} />  
+        <Route exact path='/bdc' component={Bdc} />  
+        <Route exact path='/3bh' component={BH3} />  
         <Route exact path='/ahorra' component={Ahorra} />  
-        <Route exact path='/frutas' component={Ahorra} />  
-        <Route exact path='/habla' component={Ahorra} />        
+        <Route exact path='/frutas' component={Frutas} />  
+        <Route exact path='/habla' component={Habla} />        
         {/* /:collectionId */}
         {/* <Route exact path={`${match.path}/:collectionId/:detailId`} component={Caso} /> */}
         {/* <Route exact path='/:detailId' component={CasoDetail} /> */}

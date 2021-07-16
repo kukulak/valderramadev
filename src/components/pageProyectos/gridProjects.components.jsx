@@ -34,7 +34,8 @@ class GridProjects extends React.Component {
                 "informacion": "Página para el artista Morris",
                 "link": "http://morrisart.com.mx/",
                 "gitLink": "https://github.com/kukulak/morrisArt",
-                "mTop": "23"
+                "mTop": "23",
+                "caso": "morris"
             },   
             {
                 "id": 2,
@@ -45,7 +46,8 @@ class GridProjects extends React.Component {
                 "informacion":"3 diferentes templates para aumentar información",
                 "link": "http://www.dannyychris.com/",
                 "gitLink": "https://github.com/kukulak/dc-site",
-                "mTop": "43"
+                "mTop": "43",
+                "caso": "bdc"
             },
             {
                 "id": 3,
@@ -56,7 +58,8 @@ class GridProjects extends React.Component {
                 "informacion":"Página en construccion",
                 "link": "/video/3bh",
                 "gitLink": "https://github.com/kukulak/3bh-react",
-                "mTop": "23"
+                "mTop": "23",
+                "caso": "3bh"
             },
             {
                 "id": 4,
@@ -67,7 +70,8 @@ class GridProjects extends React.Component {
                 "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
                 "link": "http://www.ahorraahora.com/",
                 "gitLink": "https://github.com/kukulak/ahorros",
-                "mTop": "63"
+                "mTop": "63",
+                "caso": "ahorra"
             },
             {
                 "id": 5,
@@ -78,7 +82,8 @@ class GridProjects extends React.Component {
                 "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
                 "link": "http://www.frutasentemporada.com/",
                 "gitLink": "https://github.com/kukulak/frutas",
-                "mTop": "13"
+                "mTop": "13",
+                "caso": "frutas"
             },
             {
                 "id": 6,
@@ -89,7 +94,8 @@ class GridProjects extends React.Component {
                 "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
                 "link": "http://www.palabrahabla.com/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
-                "mTop": "73"
+                "mTop": "73",
+                "caso": "habla"
             }
             ]
         }
@@ -109,8 +115,8 @@ class GridProjects extends React.Component {
                 <div className='cuadriculaProjects'>
                 {
                     
-                    this.state.projects.map(({name, id, link, informacion, foto, stack, mTop, gitLink}) => (
-                        <Fade cascade><TarjetaProject urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} stack={stack} projectUrl={link} hrefLive={link} hrefGit={gitLink} textBtn={name}/></Fade>
+                    this.state.projects.map(({caso, name, id, link, informacion, foto, stack, mTop, gitLink}) => (
+                        <Fade cascade><TarjetaProject urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} stack={stack} caso={caso} projectUrl={caso} hrefLive={link} hrefGit={gitLink} textBtn={name}/></Fade>
                         ))
                     }  
                 </div>

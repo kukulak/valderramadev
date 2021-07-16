@@ -30,90 +30,23 @@ class Ahorra extends React.Component {
         
         this.state = {
            casos:[
-            {
-                id: 1,
-                caso: 'morris',
-                nombre: 'Morris',
-                imgPrincipal: "/img/morris.png",
-                imgUno: "/img/morris.png",
-                imgDos: "/img/morris.png",
-                imgTres: "/img/morris.png",
-                imgCuatro: "/img/morris.png",
-                video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Sitio",
-                ifLive: "http://morrisart.com.mx/",
-                gitHub: "https://github.com/kukulak/morrisArt",
-              },
-              {
-                id: 2,
-                caso: 'bdc',
-                nombre: 'Danny y Chris',
-                imgPrincipal: '',
-                imgUno: "http://morrisart.com.mx/images/isidoro1.jpg",
-                imgDos: "http://morrisart.com.mx/images/isidoro2.jpg",
-                imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
-                imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
-                video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Información que leer",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
-                gitHub: "/bdc"
-              },
-              {
-                id: 3,
-                caso: '3BH',
-                nombre: '3BH',
-                imgPrincipal: '',
-                imgUno: "http://morrisart.com.mx/images/isidoro1.jpg",
-                imgDos: "http://morrisart.com.mx/images/isidoro2.jpg",
-                imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
-                imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
-                video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Información que leer",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
-                gitHub: "/3bh"
-              },
+     
               {
                 id: 4,
                 caso: 'ahorra',
                 nombre: 'Ahorra Ahora',
-                imgPrincipal: '',
-                imgUno: "http://morrisart.com.mx/images/isidoro1.jpg",
-                imgDos: "http://morrisart.com.mx/images/isidoro2.jpg",
-                imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
-                imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
+                imgPrincipal: '/img/ahorraahora.png',
+                imgUno: "/img/ahorra-home.png",
+                imgDos: "/img/ahorra-p1.png",
+                imgTres: "/img/ahorra-p2.png",
+                imgCuatro: "/img/ahorra-p3.png",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Información que leer",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
-                gitHub: "/ahorra"
+                info: "Diseño y Full Stack development",
+                stack: "Django",
+                ifLive: "http://valderramakelly.pythonanywhere.com/",
+                gitHub: "https://github.com/kukulak/ahorros"
               },
-              {
-                id: 5,
-                caso: 'frutas',
-                nombre: 'Temporada de frutas',
-                imgPrincipal: '',
-                imgUno: "http://morrisart.com.mx/images/isidoro1.jpg",
-                imgDos: "http://morrisart.com.mx/images/isidoro2.jpg",
-                imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
-                imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
-                video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Información que leer",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
-                gitHub: "/frutas"
-              },
-              {
-                id: 6,
-                caso: 'palabra',
-                nombre: 'Habla Palabra',
-                imgPrincipal: '',
-                imgUno: "http://morrisart.com.mx/images/isidoro1.jpg",
-                imgDos: "http://morrisart.com.mx/images/isidoro2.jpg",
-                imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
-                imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
-                video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Información que leer",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
-                gitHub: "/habla"
-              }
+       
             ]
         }
     };
@@ -203,19 +136,21 @@ class Ahorra extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({caso, nombre, imgPrincipal, id, video, info, ifLive, imgUno, imgDos, imgTres, gitHub }) => (
+                    this.state.casos.map(({caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
                             video={video}
                             nombre={nombre}
-                            imgPrincipal={process.env.PUBLIC_URL + imgPrincipal}
+                            imgPrincipal={imgPrincipal}
                             info={info}
+                            stack={stack}
+                            ifLive={ifLive}
+                            imgUno={imgUno}
+                            imgDos={imgDos}
+                            imgTres={imgTres}
+                            imgCuatro={imgCuatro}
                             gitHub={gitHub}
-                            ifLive={process.env.PUBLIC_URL + ifLive}
-                            imgUno={process.env.PUBLIC_URL + imgUno}
-                            imgDos={process.env.PUBLIC_URL + imgDos}
-                            imgTres={process.env.PUBLIC_URL + imgTres}
                         />
                     </Fade>
                             

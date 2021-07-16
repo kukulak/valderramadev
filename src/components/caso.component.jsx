@@ -28,13 +28,20 @@ const Caso = ({ caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info
             <div className="casoDetails">
                 
                 <div className="info">
-                    <p className="rolCaso">
-                        {info}  
-                    </p>
-                    
-                    <p className="stackCaso">
-                        {stack}
-                    </p>
+                    <div className="tecContainer">
+                        <p className="tecnologias"> Desarrollo</p>
+                        <p className="rolCaso">
+                            {info}  
+                        </p>
+                    </div>    
+                    <div className="tecContainer">
+                        <p className="tecnologias">
+                            Tecnologías
+                        </p>
+                        <p className="stackCaso">
+                            {stack}
+                        </p>
+                    </div>
                 </div>
 
                 <div className="btnsCaso">
