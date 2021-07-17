@@ -8,6 +8,7 @@ import { Parallax, Background } from 'react-parallax';
 
 import Contact from '../contact.component';
 
+import PrevNext from '../prevNext/prevNext.component'
 
 import Caso from '../caso.component';
 
@@ -97,7 +98,8 @@ class Morris extends React.Component {
 
         
                     <div className='box contact'>
-                        <Contact />
+                        {/* <Contact /> */}
+                        <PrevNext linkPrev="habla" linkNext="bdc" imgPrev="/img/morris-detalle.jpg" imgNext="/img/morris-detalle.jpg" />
                     </div>
                 </div>
                

@@ -12,7 +12,7 @@ import { Parallax, Background } from 'react-parallax';
 import Caso from '../caso.component';
 
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
-
+import PrevNext from '../prevNext/prevNext.component'
 
 import { gsap, ScrollTrigger, ScrollToPlugin, Draggable, MotionPathPlugin } from "gsap/all";
 
@@ -98,7 +98,8 @@ class Ahorra extends React.Component {
 
     
                 <div className='box contact'>
-                    <Contact />
+                    {/* <Contact /> */}
+                    <PrevNext linkPrev="3bh" linkNext="frutas" imgPrev="/img/morris-detalle.jpg" imgNext="/img/morris-detalle.jpg" />
                 </div>
             </div>
             </Parallax>

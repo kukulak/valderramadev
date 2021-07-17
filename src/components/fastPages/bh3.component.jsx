@@ -5,7 +5,7 @@ import { render } from '@testing-library/react';
 
 import Infotext from '../infoText.component';
 
-
+import PrevNext from '../prevNext/prevNext.component'
 import Contact from '../contact.component';
 import { Parallax, Background } from 'react-parallax';
 
@@ -100,7 +100,8 @@ class BH3 extends React.Component {
                 </div> */}
     
                 <div className='box contact'>
-                    <Contact />
+                    {/* <Contact /> */}
+                    <PrevNext linkPrev="bdc" linkNext="ahorra" imgPrev="/img/morris-detalle.jpg" imgNext="/img/morris-detalle.jpg" />
                 </div>
             </div>
             </Parallax>

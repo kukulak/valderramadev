@@ -8,7 +8,7 @@ import { Parallax, Background } from 'react-parallax';
 
 import Contact from '../contact.component';
 
-
+import PrevNext from '../prevNext/prevNext.component'
 import Caso from '../caso.component';
 
 import Fade from 'react-reveal/Fade'; // Importing Zoom effect
@@ -103,7 +103,8 @@ class Bdc extends React.Component {
                 </div> */}
     
                 <div className='box contact'>
-                    <Contact />
+                    {/* <Contact /> */}
+                    <PrevNext linkPrev="morris" linkNext="3bh" imgPrev="/img/morris-detalle.jpg" imgNext="/img/morris-detalle.jpg" />
                 </div>
             </div>
             </Parallax>
