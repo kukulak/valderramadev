@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     "MIME-Version: 1.0\r\n" .
     "Content-Type: text/html; charset=iso-8859-1\r\n";
 
-    $to = 'valderrama.christian@.com';
+    $to = 'valderrama.christian@gmail.com';
     $subject = 'Valderrama.dev';
 
     if (mail($to, $subject, $emailBody, $headers)) {
