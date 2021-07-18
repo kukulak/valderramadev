@@ -7,12 +7,17 @@ import './caso.styles.scss'
 
 
 
+import LazyLoad from 'react-lazyload';
+{/* <LazyLoad height={200}></LazyLoad>
+<LazyLoad height={200} once ></LazyLoad>
+ <LazyLoad height={200} offset={100}></LazyLoad> */}
+
 
 // import { selectCollectionItem } from '../redux/shop-item/shop-item.selectors';
 
 
 
-const Caso = ({ caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info, ifLive, gitHub, stack, imgCuatro }) =>{
+const Caso = ({ notLive, caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info, ifLive, gitHub, stack, imgCuatro }) =>{
     
     
     return(
@@ -23,7 +28,9 @@ const Caso = ({ caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info
             <h1 className="nombre">
                 {nombre}
             </h1>
-            <img className="imgPrincipal" src={imgPrincipal} alt={caso} />
+            {/* <LazyLoad height={200}>
+             <img className="imgPrincipal" src={imgPrincipal} alt={caso} />
+            </LazyLoad> */}
 
             <div className="casoDetails">
                 
@@ -45,16 +52,24 @@ const Caso = ({ caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info
                 </div>
 
                 <div className="btnsCaso">
-                    <a href={ifLive} target="_blank" rel="noopener noreferrer">VISITA LA PÁGINA</a>
+                    <a href={ifLive} target="_blank" className={notLive} rel="noopener noreferrer">VISITA LA PÁGINA</a>
                     <a href={gitHub} target="_blank" rel="noopener noreferrer">GITHUB</a>
                 </div>
             </div>
             
             <div className="contenedorImages">
-                <img className="img" src={imgUno} alt={caso} />
-                <img className="img" src={imgDos} alt={caso} />
-                <img className="img" src={imgTres} alt={caso} />
-                <img className="img" src={imgCuatro} alt={caso} />
+                <LazyLoad height={200}>
+                    <img className="img" src={imgUno} alt={caso} />
+                </LazyLoad>
+                <LazyLoad height={200}>
+                    <img className="img" src={imgDos} alt={caso} />
+                </LazyLoad>
+                <LazyLoad height={200}>
+                    <img className="img" src={imgTres} alt={caso} />
+                </LazyLoad>
+                <LazyLoad height={200}>
+                   <img className="img" src={imgCuatro} alt={caso} />
+                </LazyLoad>
             </div>
         </div>
            

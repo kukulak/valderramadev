@@ -20,7 +20,7 @@ import BasicBtn from './basicBtn.component';
 
 
 
-const ProjectInfo = ({caso, item, history, match, icono, hrefLive, hrefGit, textInfo, text}) =>{
+const ProjectInfo = ({notLive, caso, item, history, match, icono, hrefLive, hrefGit, textInfo, text}) =>{
     // const { caso, imgUno, imgDos, imgTres, nombre, info, ifLive, linkUrl } = item;
    
     return(
@@ -30,7 +30,7 @@ const ProjectInfo = ({caso, item, history, match, icono, hrefLive, hrefGit, text
         {/* <Infotext /> */}
         <div className="botones">
             <div onClick={() => history.push(`${caso}`)} className="btnCaso">Ver Caso</div>
-            <BasicBtn icono={iconLive} href={hrefLive} text='Live' />
+            <BasicBtn icono={iconLive} notLive={notLive} href={hrefLive} text='Live' />
             <BasicBtn icono={iconGit} href={hrefGit} text='GitHub' />
         </div>
             

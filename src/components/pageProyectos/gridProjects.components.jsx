@@ -55,9 +55,10 @@ class GridProjects extends React.Component {
                 "btnText": "ver video",
                 "foto": "/img/3bh.jpg",
                 "stack": "SASS / ReactJs / WP Rest Api",
-                "informacion":"Página en construccion",
+                "informacion":"Página en construcción",
                 "link": "/video/3bh",
                 "gitLink": "https://github.com/kukulak/3bh-react",
+                "notLive": 'notLive',
                 "mTop": "23",
                 "caso": "3bh"
             },
@@ -115,8 +116,8 @@ class GridProjects extends React.Component {
                 <div className='cuadriculaProjects'>
                 {
                     
-                    this.state.projects.map(({caso, name, id, link, informacion, foto, stack, mTop, gitLink}) => (
-                        <Fade cascade><TarjetaProject urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} stack={stack} caso={caso} projectUrl={caso} hrefLive={link} hrefGit={gitLink} textBtn={name}/></Fade>
+                    this.state.projects.map(({notLive, caso, name, id, link, informacion, foto, stack, mTop, gitLink}) => (
+                        <Fade cascade><TarjetaProject urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} stack={stack} caso={caso} projectUrl={caso} notLive={notLive} hrefLive={link} hrefGit={gitLink} textBtn={name}/></Fade>
                         ))
                     }  
                 </div>

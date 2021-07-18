@@ -73,6 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
 {
   "status": "success",
-  "message": "Your data was successfully submitted"
+  "message": "Enviado
 }
   <?php endif; ?>

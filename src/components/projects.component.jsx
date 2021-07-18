@@ -37,6 +37,7 @@ class Projects extends React.Component {
                 "gitLink": "https://github.com/kukulak/morrisArt",
                 "mTop": "23",
                 "textBtn": "Live",
+                "notLive": '',
                 "video": " ",
                 "caso": "morris"
             },   
@@ -51,6 +52,7 @@ class Projects extends React.Component {
                 "gitLink": "https://github.com/kukulak/dc-site",
                 "mTop": "43",
                 "textBtn": "Live",
+                "notLive": '',
                 "video": " ",
                 "caso": "bdc"
             },
@@ -65,6 +67,7 @@ class Projects extends React.Component {
                 "gitLink": "https://github.com/kukulak/3bh-react",
                 "mTop": "23",
                 "textBtn": "Video",
+                "notLive": 'notLive',
                 "video": "/video/3bhejemplo-portfolio-low.mov",
                 "caso": "3bh"
                 
@@ -80,6 +83,7 @@ class Projects extends React.Component {
                 "gitLink": "https://github.com/kukulak/ahorros",
                 "mTop": "63",
                 "textBtn": "Live",
+                "notLive": '',
                 "video": " ",
                 "caso": "ahorra"
             },
@@ -94,6 +98,7 @@ class Projects extends React.Component {
                 "gitLink": "https://github.com/kukulak/frutas",
                 "mTop": "13",
                 "textBtn": "Live",
+                "notLive": '',
                 "video": " ",
                 "caso": "frutas"
             },
@@ -108,6 +113,7 @@ class Projects extends React.Component {
                 "gitLink": "https://github.com/kukulak/textoAudio",
                 "mTop": "73",
                 "textBtn": "Live",
+                "notLive": '',
                 "video": " ",
                 "caso": "habla"
             }
@@ -223,10 +229,10 @@ class Projects extends React.Component {
                  
                 {
                     
-                    this.state.projects.map(({caso, name, id, link, informacion, foto, stack, mTop, gitLink, textBtn}) => (
+                    this.state.projects.map(({notLive, caso, name, id, link, informacion, foto, stack, mTop, gitLink, textBtn}) => (
 
                         <Fade cascade>
-                            <Project key={id} urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} caso={caso} hrefGit={gitLink} textBtn={name} text={textBtn}/>
+                            <Project key={id} urlImg={process.env.PUBLIC_URL + foto} mTop= {mTop + "px"} name={name} textInfo={informacion} stack={stack} projectUrl={link} hrefLive={link} caso={caso} notLive={notLive} hrefGit={gitLink} textBtn={name} text={textBtn}/>
                         </Fade>
                         
                         ))

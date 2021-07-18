@@ -9,6 +9,11 @@ import ProjectInfo from './projectInfo.component'
 // import { Link } from 'react-router-dom';
 // import { scroller } from 'react-scroll';
 // import {Link as ScrollLink} from 'react-scroll';
+import LazyLoad from 'react-lazyload';
+{/* <LazyLoad height={200}></LazyLoad>
+<LazyLoad height={200} once ></LazyLoad>
+ <LazyLoad height={200} offset={100}></LazyLoad> */}
+
 
 
 
@@ -24,7 +29,7 @@ function hoverOutAnim(element){
 
 
 
-function ProjectTarjetaImg({caso, urlImg, name, textInfo, hrefLive, hrefGit}) {
+function ProjectTarjetaImg({notLive, caso, urlImg, name, textInfo, hrefLive, hrefGit}) {
 
     
     const proTCon = React.createRef();
@@ -34,10 +39,11 @@ function ProjectTarjetaImg({caso, urlImg, name, textInfo, hrefLive, hrefGit}) {
         <div onMouseOut={() => hoverOutAnim(proTInfo.current)} onMouseOver={() => hoverAnim(proTInfo.current)} ref={proTCon} className='projectTarjetaImg'> 
 
             <div className="contenedorTarjetaInfo unselectable" ref={proTInfo}>
-                <ProjectInfo caso={caso} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
+                <ProjectInfo caso={caso} notLive={notLive} textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit}/>
             </div>
-
-            <img className="imgProject" src={urlImg} alt={name} />
+            <LazyLoad height={200}>
+                <img className="imgProject" src={urlImg} alt={name} />
+           </LazyLoad>
     </div>
            
            

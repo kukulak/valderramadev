@@ -1,5 +1,6 @@
 import React from 'react';
 import './contact.styles.scss'
+import axios from 'axios';
 import BasicBtn from './basicBtn.component'
 // import { withRouter } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
@@ -8,7 +9,6 @@ import BasicBtn from './basicBtn.component'
 
 import iconMusic from '../assets/icons/Youtube-Music-Logo.png'
 
-import axios from 'axios';
 
 class Contact extends React.Component {
     constructor(props) {
@@ -16,7 +16,9 @@ class Contact extends React.Component {
       this.state = {
         nombre: '',
         email: '',
-        mensaje: ''
+        mensaje: '',
+        mailSent: false,
+        error: null
       }
     }
 
@@ -24,7 +26,7 @@ class Contact extends React.Component {
       e.preventDefault();
       axios({
         method: "post", 
-        url:"http://codigosombra.com/valderramadev/contacto.php", 
+        url:"https://valderrama.dev/contacto.php", 
         data:  this.state
       })
       .then((response)=>{
@@ -80,7 +82,7 @@ class Contact extends React.Component {
 
             <div>
                     {this.state.mailSent &&
-                        <div>Gracias por escribir, pronto me pondre en contacto.</div>
+                        <div>Gracias por escribir, pronto me pondré en contacto.</div>
                     }
             </div>
           </form>

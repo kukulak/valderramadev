@@ -90,3 +90,25 @@
 .panelContact{
     padding: 0 120px;
 }
+
+
+
+@media (max-width: 600px) {
+    .cuadriculaProjectssss{
+        display: grid;
+        justify-content: center;
+    }
+    .cuadriculaProjects{
+        max-width: 100vw;
+        .botones{
+            margin-top: 25px;
+        }
+        .projectTarjetaContenedor{
+            width: 90vw;
+            padding: 0;
+            .projectTarjetaImg{
+                width: 90vw;
+            }
+        }
+    }
+  }

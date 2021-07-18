@@ -67,7 +67,7 @@
         // margin-top: -15px;
       
         // overflow: hidden;
-        color: whitesmoke;
+        color: rgb(206, 206, 206);
         text-decoration: none;
         .imgDir{
             grid-column-start: 1;
@@ -78,4 +78,23 @@
         }
     }
 
+}
+
+@media (max-width: 600px) {
+
+    .prevNextContainer{
+        .titulo{
+            z-index: 2;
+            font-size: 30px;
+            font-size: 89px;
+            font-size: 52px;
+        }
+        .Prev{
+            margin-bottom: -20px;
+        }
+        .Next{
+            margin-left: -106px;
+        }
+        
+    }
 }

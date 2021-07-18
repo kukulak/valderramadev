@@ -44,6 +44,7 @@ class Frutas extends React.Component {
                 info: "Ejercicio OOP y date()",
                 stack: "JavaScript Vainilla",
                 ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+                notLive: "",
                 gitHub: "https://github.com/kukulak/frutas"
               },
             ]
@@ -70,7 +71,7 @@ class Frutas extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -85,6 +86,7 @@ class Frutas extends React.Component {
                             imgTres={imgTres}
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
+                            notLive={notLive}
                         />
                     </Fade>
                             

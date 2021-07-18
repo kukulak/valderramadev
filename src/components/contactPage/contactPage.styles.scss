@@ -1,3 +1,10 @@
 .panelContact{
     margin: 180px 0;
 }
+
+@media (max-width: 600px) {
+
+    .panelContact{
+        margin: 90px 0;
+    }
+}

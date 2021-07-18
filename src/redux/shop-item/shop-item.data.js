@@ -10,7 +10,7 @@ const ITEM_DATA = [
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
           info: "Información que leer",
-          ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+          ifLive: "http://morrisart.com.mx",
           linkUrl: "/caso/1"
         },
         {
@@ -23,7 +23,7 @@ const ITEM_DATA = [
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
           info: "Información que leer",
-          ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+          ifLive: "http://dannyychris.com",
           linkUrl: "/bdc"
         },
         {
@@ -36,7 +36,8 @@ const ITEM_DATA = [
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
           info: "Información que leer",
-          ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+          ifLive: "",
+          notLive: "notLive",
           linkUrl: "/3bh"
         },
         {
@@ -49,7 +50,7 @@ const ITEM_DATA = [
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
           info: "Información que leer",
-          ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+          ifLive: "http://valderramakelly.pythonanywhere.com/",
           linkUrl: "/ahorra"
         },
         {
@@ -62,7 +63,7 @@ const ITEM_DATA = [
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
           info: "Información que leer",
-          ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+          ifLive: "https://valderrama.dev/temporadadefrutas",
           linkUrl: "/frutas"
         },
         {
@@ -75,7 +76,7 @@ const ITEM_DATA = [
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
           info: "Información que leer",
-          ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+          ifLive: "https://valderrama.dev/temporadaDeFrutas/hablapalabra",
           linkUrl: "/habla"
         }
     

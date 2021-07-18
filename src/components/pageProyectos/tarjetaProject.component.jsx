@@ -19,7 +19,7 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 
 
-function TarjetaProject({caso, hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop}){
+function TarjetaProject({notLive, caso, hrefGit, hrefLive, urlImg, name, stack, textBtn, projectUrl, textInfo, mTop}){
     // const proCon = React.createRef();
     // const proInfo = React.createRef();
 
@@ -28,7 +28,7 @@ function TarjetaProject({caso, hrefGit, hrefLive, urlImg, name, stack, textBtn, 
 
         <div className='projectTarjetaContenedor' style={{ marginTop : mTop }}> 
             <ProjectBtn projectUrl={projectUrl} textBtn={textBtn}/>
-            <ProjectTarjetaImg urlImg={urlImg} name={name} textInfo={textInfo} caso={caso} hrefLive={hrefLive} hrefGit={hrefGit}/>
+            <ProjectTarjetaImg urlImg={urlImg} notLive={notLive} name={name} textInfo={textInfo} caso={caso} hrefLive={hrefLive} hrefGit={hrefGit}/>
             <ProjectName name={name}/>
             <ProjectStack stack={stack}/>
         </div>

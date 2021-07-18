@@ -11,6 +11,11 @@ import ProjectInfo from './projectInfo.component'
 // import {Link as ScrollLink} from 'react-scroll';
 
 
+import LazyLoad from 'react-lazyload';
+{/* <LazyLoad height={200}></LazyLoad>
+<LazyLoad height={200} once ></LazyLoad>
+ <LazyLoad height={200} offset={100}></LazyLoad> */}
+
 
 function hoverAnim(element){
     element.style.marginLeft = '0px'
@@ -24,7 +29,7 @@ function hoverOutAnim(element){
 
 
 
-function ProjectImg({urlImg, name, textInfo, hrefLive, hrefGit, text, caso}) {
+function ProjectImg({notLive, urlImg, name, textInfo, hrefLive, hrefGit, text, caso}) {
 
     
     const proCon = React.createRef();
@@ -34,10 +39,11 @@ function ProjectImg({urlImg, name, textInfo, hrefLive, hrefGit, text, caso}) {
         <div onMouseOut={() => hoverOutAnim(proInfo.current)} onMouseOver={() => hoverAnim(proInfo.current)} ref={proCon} className='projectImg'> 
 
             <div className="contenedorInfo unselectable" ref={proInfo}>
-                <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} hrefGit={hrefGit} caso={caso} text={text}/>
+                <ProjectInfo textInfo={textInfo} hrefLive={hrefLive} notLive={notLive} hrefGit={hrefGit} caso={caso} text={text}/>
             </div>
-
-            <img className="imgProject" src={urlImg} alt={name} />
+            <LazyLoad height={200}>
+                <img className="imgProject" src={urlImg} alt={name} />
+            </LazyLoad>
     </div>
            
            

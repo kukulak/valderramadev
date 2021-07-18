@@ -44,6 +44,7 @@ class Ahorra extends React.Component {
                 info: "Diseño y Full Stack development",
                 stack: "Django",
                 ifLive: "http://valderramakelly.pythonanywhere.com/",
+                notLive: "",
                 gitHub: "https://github.com/kukulak/ahorros"
               },
        
@@ -73,7 +74,7 @@ class Ahorra extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -88,6 +89,7 @@ class Ahorra extends React.Component {
                             imgTres={imgTres}
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
+                            notLive={notLive}
                         />
                     </Fade>
                             
