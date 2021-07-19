@@ -52,38 +52,51 @@ class Contact extends React.Component {
     render() {
       return(
         <div className="contactContainer">
-          <form id="contact-form" className="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST" action="">
+          {/* <div className="ccontainer"> */}
+            <form id="contact-form" className="contactForm" onSubmit={this.handleSubmit.bind(this)} method="POST" action="">
 
-            <div className="contactNombre contactGeneral">
-              <label htmlFor="name">NOMBRE</label>
-              <input type="text" className="form-control" value={this.state.nombre} onChange={this.onNameChange.bind(this)} />
-            </div>
+              <div className="contactNombre contactGeneral">
+                <label htmlFor="name">NOMBRE</label>
+                <input type="text" className="form-control" value={this.state.nombre} onChange={this.onNameChange.bind(this)} />
+              </div>
 
-            <div className="contactEmail contactGeneral">
-              <label htmlFor="exampleInputEmail1">EMAIL</label>
-              <input type="email" className="contactEmail" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-            </div>
+              <div className="contactEmail contactGeneral">
+                <label htmlFor="exampleInputEmail1">EMAIL</label>
+                <input type="email" className="contactEmail" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+              </div>
 
-            <div className="contactMensaje contactGeneral">
-              <label htmlFor="message">MENSAJE</label>
-              <textarea className="form-control" rows="5" value={this.state.mensaje} onChange={this.onMessageChange.bind(this)} />
-            </div>
+              <div className="contactMensaje contactGeneral">
+                <label htmlFor="message">MENSAJE</label>
+                <textarea className="form-control" rows="5" value={this.state.mensaje} onChange={this.onMessageChange.bind(this)} />
+              </div>
 
-            <button type="submit" className="contactEnviar contactGeneral">ENVIAR</button>
+              <button type="submit" className="contactEnviar contactGeneral">ENVIAR</button>
 
-            <div>
-                    {this.state.mailSent &&
-                        <div>Gracias por escribir, pronto me pondré en contacto.</div>
-                    }
-            </div>
-          </form>
+              <div>
+                      {this.state.mailSent &&
+                          <div>Gracias por escribir, pronto me pondré en contacto.</div>
+                      }
+              </div>
+            </form>
 
-            <div className="linkMusic">
+
+
+                <div className="email">
+                  
+                        <a href="mailto:valderrama.christian@gmail.com">
+                            valderrama.christian@gmail.com
+                        </a>
+
+       <div className="linkMusic">
                 <a href="https://music.youtube.com/watch?v=P8LCrzZ3VSU&feature=share" target="_blank" rel="noopener noreferrer">
                    <img src={ iconMusic } width="100" alt="youTubeMusic" />
                    </a>
-                   <br /><br /> Escuchando 
+                   <br /> Escuchando 
             </div>
+
+                </div>
+          {/* </div> */}
+
 
         </div>
       );

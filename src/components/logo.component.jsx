@@ -14,7 +14,8 @@ const Logo = ({url}) =>(
 
     <Link to='/' className='logo noselect'> 
         {/* <img src={url} alt="logo" /> */}
-        valderrama
+        <p>Valderrama.dev</p>
+        {/* <p>fullStack developer</p> */}
         {/* <Distortion text='valderrama' /> */}
     </Link>
            

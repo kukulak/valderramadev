@@ -18,7 +18,6 @@ function Footer(){
                 <p className="textoFooter">
                 HECHO EN M&Eacute;XICO. Christian Valderrama. © 2021 <br /><br />
 
-                {/* This site was built with great tools like Photoshop, Sublime Text 2 & Codekit. Font used in headlines is Brandon Grotesque, font in body copy is FF Meta Serif Web Pro. Both fonts are served up via Typekit. */}
 
                 <a href="http://" target="_blank" rel="noopener noreferrer">
 

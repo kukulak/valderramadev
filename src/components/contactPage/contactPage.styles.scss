@@ -21,8 +21,14 @@
 }
 
 .email{
-    margin: 70px auto 0;
-    font-size: 20px;
+    // margin: 70px auto 0;
+    font-size: 27px;
+    font-family: 'Bigshot One', sans-serif;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    gap: 70px;
+    margin-top: -90px;
     a{
         color: whitesmoke;
         text-decoration: none;
@@ -36,6 +42,7 @@
         margin: 90px 0;
     }
     .email{
+        margin-top: 10px;
         font-size: 15px;
     }
 }

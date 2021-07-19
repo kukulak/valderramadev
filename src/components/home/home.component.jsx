@@ -87,11 +87,11 @@ class HomePage extends Component{
                     {/* </div> */}
                 </div>
 
-                <div className="homeEmail">
+                {/* <div className="homeEmail">
                         <a href="mailto:valderrama.christian@gmail.com">
                             valderrama.christian@gmail.com
                         </a>
-                </div>
+                </div> */}
              </Parallax>
             )
     }

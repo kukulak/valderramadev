@@ -18,10 +18,15 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $errors[] = 'Email invalido';
     }
   }
+  if (empty($_POST['nombre'])) {
+    $errors[] = 'no hay nombre';
+  } else {
+    $nombre = $_POST['nombre'];
+  }
   if (empty($_POST['mensaje'])) {
     $errors[] = 'Mensaje vacio';
   } else {
-    $mensaje = $_POST['Mensaje'];
+    $mensaje = $_POST['mensaje'];
   }
   if (empty($errors)) {
     $date = date('j, F Y h:i A');
@@ -38,6 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     Date: <span style=\"color:#888\">$date</span>
     <br>
     Email: <span style=\"color:#888\">$email</span>
+    <br>
+    Nombre: <span style=\"color:#888\">$nombre</span>
     <br>
     Mensaje: <div style=\"color:#888\">$mensaje</div>
     </div>

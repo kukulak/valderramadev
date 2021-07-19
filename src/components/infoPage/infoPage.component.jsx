@@ -69,9 +69,9 @@ class InfoPage extends Component{
                         <div className="panel">
                             <Infotext />
                         </div>
-                        <div className="panelContact">
+                        {/* <div className="panelContact">
                             <Contact />
-                        </div>
+                        </div> */}
                  
                 </div>
              </Parallax>

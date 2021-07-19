@@ -92,11 +92,11 @@ class ContactPage extends Component{
                     {/* </div> */}
                 </div>
 
-                <div className="email">
+                {/* <div className="email">
                         <a href="mailto:valderrama.christian@gmail.com">
                             valderrama.christian@gmail.com
                         </a>
-                </div>
+                </div> */}
 
                 <div className="contactRedes">
                     <Redes/>
