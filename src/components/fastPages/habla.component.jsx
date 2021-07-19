@@ -44,7 +44,7 @@ class Habla extends React.Component {
                 info:"Al escribir un texto podemos escucharlo gracias a Audio() de javascript, las palabras están grabadas previamente con diferentes voces e intenciones. Este experimento se escucha.",
                 des: "Diseño y Front End development",
                 stack: "JavaScript Vainilla",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+                ifLive: "https://valderrama.dev/hablapalabra/",
                 notLive: "",
                 gitHub: "https://github.com/kukulak/textoAudio"
               },

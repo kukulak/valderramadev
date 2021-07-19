@@ -86,6 +86,12 @@ class HomePage extends Component{
                         </div> */}
                     {/* </div> */}
                 </div>
+
+                <div className="homeEmail">
+                        <a href="mailto:valderrama.christian@gmail.com">
+                            valderrama.christian@gmail.com
+                        </a>
+                </div>
              </Parallax>
             )
     }

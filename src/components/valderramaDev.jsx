@@ -75,7 +75,7 @@ class SuperHome extends React.Component {
                 "stack": "JavaScript Vainilla",
                 "informacionC":"Calendario que se actualiza por la temporada de frutas del mes",
                 "informacion": "Con ayuda de date() se define el tamaño de cada objeto; lo cual indica el mejor momento para consumir la fruta.",
-                "link": "https://valderrama.dev/frutas/",
+                "link": "https://valderrama.dev/temporadadefrutas/",
                 "gitLink": "https://github.com/kukulak/frutas",
                 "mTop": "13"
             },
@@ -86,7 +86,7 @@ class SuperHome extends React.Component {
                 "foto": "/img/habla.jpg",
                 "stack": "Django / JavaScript",
                 "informacion":"Al escribir un texto podemos escucharlo gracias a Audio() de javascript, las palabras están grabadas previamente con diferentes voces e intenciones. Este experimento se escucha.",
-                "link": "http://www.palabrahablada.com/",
+                "link": "https://valderrama.dev/hablapalabra/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
                 "mTop": "73"
             }

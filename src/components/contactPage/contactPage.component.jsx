@@ -10,6 +10,8 @@ import Logo from '../logo.component'
 import Infotext from '../infoText.component'
 import './contactPage.styles.scss';
 
+import Redes from '../redes.component'
+
 import { withRouter } from 'react-router-dom';
 
 
@@ -69,7 +71,7 @@ class ContactPage extends Component{
                     </Background> */}
                 
 
-                <div className="home">
+                <div className="home homeContact">
                     {/* <Menu /> */}
                     {/* <Logo /> */}
                     {/* <Portada /> */}
@@ -88,6 +90,16 @@ class ContactPage extends Component{
                             <Contact />
                         </div>
                     {/* </div> */}
+                </div>
+
+                <div className="email">
+                        <a href="mailto:valderrama.christian@gmail.com">
+                            valderrama.christian@gmail.com
+                        </a>
+                </div>
+
+                <div className="contactRedes">
+                    <Redes/>
                 </div>
              </Parallax>
             )

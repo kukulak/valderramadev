@@ -45,7 +45,7 @@ class Frutas extends React.Component {
                 info: "Con ayuda de date() se define el tamaño de cada objeto; lo cual indica el mejor momento para consumir la fruta.",
                 des: "Diseño y Front End development",
                 stack: "JavaScript Vainilla",
-                ifLive: "https://valderrama.dev/frutas/",
+                ifLive: "https://valderrama.dev/temporadadefrutas/",
                 notLive: "",
                 gitHub: "https://github.com/kukulak/frutas"
               },

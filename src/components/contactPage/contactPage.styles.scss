@@ -2,9 +2,44 @@
     margin: 180px 0;
 }
 
+
+.contactRedes{
+    display: grid;
+    justify-content: center;
+}
+
+
+.homeContact{
+    .contactContainer{
+        margin-bottom: 0;
+    }
+    .panelContact{
+        margin-bottom: 0;
+
+    }
+    
+}
+
+.email{
+    margin: 70px auto 0;
+    font-size: 20px;
+    a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}
+
+
 @media (max-width: 600px) {
 
     .panelContact{
         margin: 90px 0;
     }
+    .email{
+        font-size: 15px;
+    }
 }
+
+
+
+
