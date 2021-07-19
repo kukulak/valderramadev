@@ -129,7 +129,7 @@ class Projects extends React.Component {
     componentDidMount(){
 
         // componentDidMount() {
-            window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
                 //    }
 
         gsap.utils.toArray('.box').forEach(box => {

@@ -25,7 +25,7 @@ class Contact extends React.Component {
     handleSubmit(e){
       e.preventDefault();
       axios({
-        method: "post", 
+        method: "POST", 
         url:"https://valderrama.dev/contacto.php", 
         data:  this.state
       })
@@ -39,19 +39,10 @@ class Contact extends React.Component {
           alert(this.state.nombre + " tu mensaje fue enviado."); 
           this.resetForm()
         } else if (response.data.status === 'fail') {
-          alert(this.state.nombre + " el mensaje no se envio")
+          alert(this.state.nombre + " el mensaje no se envió")
         }
       })
       .catch(error => this.setState({ error: error.message }));
-
-      // .then(result => {
-      //     this.setState({
-      //       mailSent: result.data.sent
-      //     }, () => console.log(this.state)) // NB! setState accepts callbacks
-      //   })
-      //   .catch(error => this.setState({ error: error.message }));
-
-
     }
 
     resetForm(){
@@ -110,8 +101,6 @@ class Contact extends React.Component {
       this.setState({mensaje: event.target.value})
     }
   
-    handleSubmit(event) {
-    }
   }
   
   export default Contact;
