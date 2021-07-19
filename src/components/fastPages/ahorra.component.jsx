@@ -41,7 +41,8 @@ class Ahorra extends React.Component {
                 imgTres: "/img/ahorra-p2.jpg",
                 imgCuatro: "/img/ahorra-p3.jpg",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Diseño y Full Stack development",
+                info: "Sitio que ayuda a organizar los ahorros y definir objetivos.",
+                des: "Diseño y Full Stack development",
                 stack: "Django",
                 ifLive: "http://valderramakelly.pythonanywhere.com/",
                 notLive: "",
@@ -54,7 +55,9 @@ class Ahorra extends React.Component {
 
 
     componentDidMount(){
-
+        
+            window.scrollTo(0, 0);
+                 
 
 
     }
@@ -74,7 +77,7 @@ class Ahorra extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({des, notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -90,6 +93,7 @@ class Ahorra extends React.Component {
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
                             notLive={notLive}
+                            des={des}
                         />
                     </Fade>
                             

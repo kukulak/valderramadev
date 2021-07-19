@@ -41,7 +41,8 @@ class BH3 extends React.Component {
                 imgTres: " ",
                 imgCuatro: " ",
                 video: " ",
-                info: "Diseño y Full Stack development",
+                info: "Se optimizaron tiempos y procesos al permanecer en un hosteo compartido y utilizar el generador de API de WordPress, se implementó el API de Instagram. Página en construcción",
+                des: "Diseño y Full Stack development",
                 stack: "SASS / ReactJs / WP Rest Api",
                 ifLive: " ",
                 notLive: "notLive",
@@ -55,7 +56,7 @@ class BH3 extends React.Component {
 
     componentDidMount(){
 
-
+        window.scrollTo(0, 0);
 
     }
 
@@ -73,7 +74,7 @@ class BH3 extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({des, notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -89,6 +90,7 @@ class BH3 extends React.Component {
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
                             notLive={notLive}
+                            des={des}
                         />
                     </Fade>
                             

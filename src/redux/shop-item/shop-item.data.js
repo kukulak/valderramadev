@@ -22,7 +22,8 @@ const ITEM_DATA = [
           imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
-          info: "Información que leer",
+          infoC: "Información que leer",
+          info: "Página para evento. Se pueden aumentar secciones, despues del evento cambia para presentación de fotos",
           ifLive: "http://dannyychris.com",
           linkUrl: "/bdc"
         },
@@ -35,7 +36,7 @@ const ITEM_DATA = [
           imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
-          info: "Información que leer",
+          info: "Se optimizaron tiempos y procesos al permanecer en un hosteo compartido e implementar WordPress API. Página en construcción",
           ifLive: "",
           notLive: "notLive",
           linkUrl: "/3bh"
@@ -62,8 +63,9 @@ const ITEM_DATA = [
           imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
-          info: "Información que leer",
-          ifLive: "https://valderrama.dev/temporadadefrutas",
+          infoC: "Información que leer",
+          info: "Con ayuda de date() se define el tamaño de cada objeto; lo cual indica el mejor momento para consumir la fruta.",
+          ifLive: "https://valderrama.dev/frutas/",
           linkUrl: "/frutas"
         },
         {
@@ -75,7 +77,7 @@ const ITEM_DATA = [
           imgTres: "http://morrisart.com.mx/images/isidoro3.jpg",
           imgCuatro: "http://morrisart.com.mx/images/isidoro4.jpg",
           video: "http://morrisart.com.mx/images/isidoro4.jpg",
-          info: "Información que leer",
+          info: "Al escribir un texto podemos escucharlo gracias a Audio() de javascript, las palabras están grabadas previamente con diferentes voces e intenciones. Este experimento se escucha.",
           ifLive: "https://valderrama.dev/temporadaDeFrutas/hablapalabra",
           linkUrl: "/habla"
         }

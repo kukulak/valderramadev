@@ -40,7 +40,9 @@ class Habla extends React.Component {
                 imgTres: "/img/habla-p4.jpg",
                 imgCuatro: "/img/habla-p5.jpg",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Creado en JavaScript para explorar Audio()",
+                infoC: "Creado en JavaScript para explorar Audio()",
+                info:"Al escribir un texto podemos escucharlo gracias a Audio() de javascript, las palabras están grabadas previamente con diferentes voces e intenciones. Este experimento se escucha.",
+                des: "Diseño y Front End development",
                 stack: "JavaScript Vainilla",
                 ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
                 notLive: "",
@@ -52,7 +54,7 @@ class Habla extends React.Component {
 
 
     componentDidMount(){
-
+        window.scrollTo(0, 0);
 
     }
 
@@ -71,7 +73,7 @@ class Habla extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({des, notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -87,6 +89,7 @@ class Habla extends React.Component {
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
                             notLive={notLive}
+                            des={des}
                         />
                     </Fade>
                             

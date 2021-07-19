@@ -41,8 +41,9 @@ class Morris extends React.Component {
                 imgTres: "/img/morris-detalle.jpg",
                 imgCuatro: " ",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Diseño y Full Stack development",
-                stack: "SASS / ReactJs",
+                info: "Catálogo del artista Morris, listo para escalar a e-commerce",
+                des: "Diseño y Full Stack development",
+                stack: "SASS / ReactJs / Django",
                 ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
                 notLive: "",
                 gitHub: "https://github.com/kukulak/morrisArt"
@@ -54,7 +55,7 @@ class Morris extends React.Component {
 
 
     componentDidMount(){
-
+        window.scrollTo(0, 0);
 
     }
 
@@ -74,7 +75,7 @@ class Morris extends React.Component {
                     
                     <div className="box contenedorCaso">
                         {
-                        this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                        this.state.casos.map(({des, notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                         <Fade cascade>
                             <Caso
                                 key={id}
@@ -90,6 +91,7 @@ class Morris extends React.Component {
                                 imgCuatro={imgCuatro}
                                 gitHub={gitHub}
                                 notLive={notLive}
+                                des={des}
                             />
                         </Fade>
                                 

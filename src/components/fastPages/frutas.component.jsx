@@ -41,9 +41,11 @@ class Frutas extends React.Component {
                 imgTres: "/img/frutas-p3.jpg",
                 imgCuatro: "/img/frutas-p4.jpg",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Ejercicio OOP y date()",
+                infoC: "Ejercicio OOP y date()",
+                info: "Con ayuda de date() se define el tamaño de cada objeto; lo cual indica el mejor momento para consumir la fruta.",
+                des: "Diseño y Front End development",
                 stack: "JavaScript Vainilla",
-                ifLive: "http://morrisart.com.mx/images/isidoro4.jpg",
+                ifLive: "https://valderrama.dev/frutas/",
                 notLive: "",
                 gitHub: "https://github.com/kukulak/frutas"
               },
@@ -53,7 +55,7 @@ class Frutas extends React.Component {
 
 
     componentDidMount(){
-
+        window.scrollTo(0, 0);
     }
 
 
@@ -71,7 +73,7 @@ class Frutas extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({des, notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -87,6 +89,7 @@ class Frutas extends React.Component {
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
                             notLive={notLive}
+                            des={des}
                         />
                     </Fade>
                             

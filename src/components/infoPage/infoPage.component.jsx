@@ -33,6 +33,7 @@ class InfoPage extends Component{
 
     componentDidMount() {
         let sections = gsap.utils.toArray(".panel") 
+        window.scrollTo(0, 0);
         
         // gsap.to(sections, {
         //     // x: -1150,

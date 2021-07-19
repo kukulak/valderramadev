@@ -32,7 +32,8 @@ class Projects extends React.Component {
                 "btnText": "Morris",
                 "foto": "/img/morris.jpg",
                 "stack": "SASS / ReactJs",
-                "informacion": "Página para el artista Morris",
+                "informacionC": "Catálogo del artista Morris listo para escalar a e-commerce",
+                "informacion": "Catálogo del artista Morris.",
                 "link": "http://morrisart.com.mx/",
                 "gitLink": "https://github.com/kukulak/morrisArt",
                 "mTop": "23",
@@ -47,7 +48,8 @@ class Projects extends React.Component {
                 "btnText": "dannyychris.com",
                 "foto": "/img/dannyychris.jpg",
                 "stack": "Django",
-                "informacion":"3 diferentes templates para aumentar información",
+                "informacion": "Página del evento Danny y Chris",
+                "informacionC":"Página para evento. Se pueden aumentar secciones, despues del evento cambia para presentación de fotos",
                 "link": "http://www.dannyychris.com/",
                 "gitLink": "https://github.com/kukulak/dc-site",
                 "mTop": "43",
@@ -59,18 +61,18 @@ class Projects extends React.Component {
             {
                 "id": 3,
                 "name": "3BH",
-                "btnText": "ver video",
+                "btnText": "caso",
                 "foto": "/img/3bh.jpg",
                 "stack": "SASS / ReactJs / WP Rest Api",
-                "informacion":"Página en construccion",
-                "link": "/video/3bh",
+                "informacionC":"Se optimizaron tiempos y procesos al permanecer en un hosteo compartido e implementar WordPress API. Página en construcción",
+                "informacion": "Sitio para Three Blue Hause.",
+                "link": "",
                 "gitLink": "https://github.com/kukulak/3bh-react",
                 "mTop": "23",
-                "textBtn": "Video",
+                "textBtn": "Caso",
                 "notLive": 'notLive',
                 "video": "/video/3bhejemplo-portfolio-low.mov",
                 "caso": "3bh"
-                
             },
             {
                 "id": 4,
@@ -78,8 +80,8 @@ class Projects extends React.Component {
                 "btnText": "ahorraAhora.com",
                 "foto": "/img/ahorraahora.jpg",
                 "stack": "Django",
-                "informacion":"Sitio que ayuda a organizar los ahorros y definir objetivos",
-                "link": "http://www.ahorraahora.com/",
+                "informacion":"AhorraAhora te ayuda a organizar tus ahorros y definir objetivos.",
+                "link": "http://valderramakelly.pythonanywhere.com/",
                 "gitLink": "https://github.com/kukulak/ahorros",
                 "mTop": "63",
                 "textBtn": "Live",
@@ -89,12 +91,13 @@ class Projects extends React.Component {
             },
             {
                 "id": 5,
-                "name": "frutasentemporada.com",
-                "btnText": "frutasentemporada.com",
+                "name": "frutasentemporada",
+                "btnText": "frutasentemporada",
                 "foto": "/img/frutas.jpg",
                 "stack": "JavaScript Vainilla",
-                "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
-                "link": "http://www.frutasentemporada.com/",
+                "informacion":"Calendario que se actualiza por la temporada de frutas del mes.",
+                "informacionC": "Con ayuda de date() se define el tamaño de cada objeto; lo cual indica el mejor momento para consumir la fruta.",
+                "link": "https://valderrama.dev/frutas/",
                 "gitLink": "https://github.com/kukulak/frutas",
                 "mTop": "13",
                 "textBtn": "Live",
@@ -108,8 +111,9 @@ class Projects extends React.Component {
                 "btnText": "palabraHablada.com",
                 "foto": "/img/habla.jpg",
                 "stack": "Django / JavaScript",
-                "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
-                "link": "http://www.palabrahablada.com/",
+                "informacionC":"Al escribir un texto podemos escucharlo gracias a Audio() de javascript, las palabras están grabadas previamente con diferentes voces e intenciones. Este experimento se escucha.",
+                "informacion": "De alguna forma te lee lo que escribes.",
+                "link": "https://valderrama.dev/palabrahablada/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
                 "mTop": "73",
                 "textBtn": "Live",
@@ -124,36 +128,9 @@ class Projects extends React.Component {
 
     componentDidMount(){
 
-
-        // let container = document.querySelector("#proyectosT");
-
-        // let height;
-        // function setHeight() {
-        //     height = container.clientHeight;
-        
-        //     console.log("DOCheight", document.body.style.height)
-
-        //     // document.body.style.height = height + "px";
-        //     console.log("height", height)
-        // }
-   
-        // ScrollTrigger.addEventListener("refreshInit", setHeight);
-
-        // smooth scrolling container
-
-        // gsap.to(container, {
-        //     y: () => -(height - height),
-        //     ease: "none",
-        //     scrollTrigger: {
-        //         trigger: document.body,
-        //         start: "top top",
-        //         end: "bottom bottom",
-        //         scrub: 1,
-        //         invalidateOnRefresh: true,
-        // }
-        // });
-
-        // scrolltrigger for each box
+        // componentDidMount() {
+            window.scrollTo(0, 0);
+                //    }
 
         gsap.utils.toArray('.box').forEach(box => {
             gsap.to(box, {

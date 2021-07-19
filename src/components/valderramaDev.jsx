@@ -29,7 +29,7 @@ class SuperHome extends React.Component {
                 "btnText": "Morris",
                 "foto": "/img/morris.jpg",
                 "stack": "SASS / ReactJs",
-                "informacion": "Página para el artista Morris",
+                "informacion": "Catálogo del artista Morris listo para escalar a e-commerce",
                 "link": "http://morrisart.com.mx/",
                 "gitLink": "https://github.com/kukulak/morrisArt",
                 "mTop": "23"
@@ -40,7 +40,7 @@ class SuperHome extends React.Component {
                 "btnText": "dannyychris.com",
                 "foto": "/img/dannyychris.jpg",
                 "stack": "Django",
-                "informacion":"3 diferentes templates para aumentar información",
+                "informacion":"Página para evento. Se pueden aumentar secciones, despues del evento cambia para presentación de fotos",
                 "link": "http://www.dannyychris.com/",
                 "gitLink": "https://github.com/kukulak/dc-site",
                 "mTop": "43"
@@ -51,8 +51,8 @@ class SuperHome extends React.Component {
                 "btnText": "ver video",
                 "foto": "/img/3bh.jpg",
                 "stack": "SASS / ReactJs / WP Rest Api",
-                "informacion":"Página en construccion",
-                "link": "/video/3bh",
+                "informacion":"Se optimizaron tiempos y procesos al permanecer en un hosteo compartido e implementar WordPress API. Página en construcción",
+                "link": "",
                 "gitLink": "https://github.com/kukulak/3bh-react",
                 "mTop": "23"
             },
@@ -69,12 +69,13 @@ class SuperHome extends React.Component {
             },
             {
                 "id": 5,
-                "name": "frutasentemporada.com",
-                "btnText": "frutasentemporada.com",
+                "name": "frutasentemporada",
+                "btnText": "frutasentemporada",
                 "foto": "/img/frutas.jpg",
                 "stack": "JavaScript Vainilla",
-                "informacion":"Calendario que se actualiza por la temporada de frutas del mes",
-                "link": "http://www.frutasentemporada.com/",
+                "informacionC":"Calendario que se actualiza por la temporada de frutas del mes",
+                "informacion": "Con ayuda de date() se define el tamaño de cada objeto; lo cual indica el mejor momento para consumir la fruta.",
+                "link": "https://valderrama.dev/frutas/",
                 "gitLink": "https://github.com/kukulak/frutas",
                 "mTop": "13"
             },
@@ -84,7 +85,7 @@ class SuperHome extends React.Component {
                 "btnText": "palabraHablada.com",
                 "foto": "/img/habla.jpg",
                 "stack": "Django / JavaScript",
-                "informacion":"Experimento; buscando cuantas palabras usa el mexicano común",
+                "informacion":"Al escribir un texto podemos escucharlo gracias a Audio() de javascript, las palabras están grabadas previamente con diferentes voces e intenciones. Este experimento se escucha.",
                 "link": "http://www.palabrahablada.com/",
                 "gitLink": "https://github.com/kukulak/textoAudio",
                 "mTop": "73"

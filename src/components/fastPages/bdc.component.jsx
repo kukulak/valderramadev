@@ -41,7 +41,8 @@ class Bdc extends React.Component {
                 imgTres: "/img/bdc-music.jpg",
                 imgCuatro: "",
                 video: "http://morrisart.com.mx/images/isidoro4.jpg",
-                info: "Diseño y Full Stack development",
+                info: "Página informativa para evento. Se pueden aumentar secciones, despues del evento el home cambia para presentación de fotos",
+                des: "Diseño y Full Stack development",
                 stack: "Django",
                 ifLive: "http://www.dannyychris.com/",
                 notLive: "",
@@ -55,7 +56,7 @@ class Bdc extends React.Component {
 
     componentDidMount(){
 
-
+        window.scrollTo(0, 0);
 
 
 
@@ -76,7 +77,7 @@ class Bdc extends React.Component {
                 
                 <div className="box contenedorCaso">
                     {
-                    this.state.casos.map(({notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
+                    this.state.casos.map(({des, notLive, caso, nombre, id, video, info, ifLive, imgUno, imgDos, imgTres, imgPrincipal, stack, gitHub, imgCuatro }) => (
                     <Fade cascade>
                         <Caso
                             key={id}
@@ -92,6 +93,7 @@ class Bdc extends React.Component {
                             imgCuatro={imgCuatro}
                             gitHub={gitHub}
                             notLive={notLive}
+                            des={des}
                         />
                     </Fade>
                             

@@ -17,7 +17,7 @@ import LazyLoad from 'react-lazyload';
 
 
 
-const Caso = ({ notLive, caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info, ifLive, gitHub, stack, imgCuatro }) =>{
+const Caso = ({ des, notLive, caso, imgPrincipal, imgUno, imgDos, video, imgTres, nombre, info, ifLive, gitHub, stack, imgCuatro }) =>{
     
     
     return(
@@ -36,14 +36,20 @@ const Caso = ({ notLive, caso, imgPrincipal, imgUno, imgDos, video, imgTres, nom
                 
                 <div className="info">
                     <div className="tecContainer">
-                        <p className="tecnologias"> Desarrollo</p>
+                        <p className="tecnologias">Información:</p>
                         <p className="rolCaso">
                             {info}  
                         </p>
                     </div>    
                     <div className="tecContainer">
+                        <p className="tecnologias"> Desarrollo:</p>
+                        <p className="rolCaso">
+                            {des}  
+                        </p>
+                    </div>  
+                    <div className="tecContainer">
                         <p className="tecnologias">
-                            Tecnologías
+                            Tecnologías:
                         </p>
                         <p className="stackCaso">
                             {stack}
